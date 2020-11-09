@@ -1,0 +1,379 @@
+MovieID,SondID,Movie,Song,Artist
+1,1,"Extremely Wicked, Shockingly Evil and Vile",Do You Believe In Magic?,THE LOVIN' SPOONFUL
+1,2,"Extremely Wicked, Shockingly Evil and Vile",Crimson and Clover,TOMMY JAMES
+1,3,"Extremely Wicked, Shockingly Evil and Vile",Thousand Watt Work-Out,JOHN MORAN
+1,4,"Extremely Wicked, Shockingly Evil and Vile",We'll Face This World Together,TOMMY SMITH BAND
+1,5,"Extremely Wicked, Shockingly Evil and Vile","Symphony No. 9 in D minor, Op. 125, Choral: II. Molto vivace","ZAGREB PHILHARMONIC ORCHESTRA, RICHARD EDLINGER"
+1,6,"Extremely Wicked, Shockingly Evil and Vile",I Gotcha,JOE TEX
+1,7,"Extremely Wicked, Shockingly Evil and Vile",Lucky Man (2012 Remastered Version),"EMERSON, LAKE & PALMER"
+1,8,"Extremely Wicked, Shockingly Evil and Vile",The Letter,THE BOX TOPS
+1,9,"Extremely Wicked, Shockingly Evil and Vile",Looking For The Answer,THE ELDERS
+1,10,"Extremely Wicked, Shockingly Evil and Vile",Don't Leave Me This Way,THELMA HOUSTON
+1,11,"Extremely Wicked, Shockingly Evil and Vile",The Four Horsemen,METALLICA
+1,12,"Extremely Wicked, Shockingly Evil and Vile",Media Circus,WENDY BLACKSTONE
+1,13,"Extremely Wicked, Shockingly Evil and Vile",Soda Sex,WENDY BLACKSTONE
+1,14,"Extremely Wicked, Shockingly Evil and Vile",Orfeo's Waltz,TRISTAN BELTRAMI
+1,15,"Extremely Wicked, Shockingly Evil and Vile",The Truth (Queen of the Night),MARCO BELTRAMI
+1,16,"Extremely Wicked, Shockingly Evil and Vile",News Scene,"MARCO BELTRAMI, DENNIS SMITH"
+2,17,Psycho,Prelude,Danny Elfman
+2,18,Psycho,Living Dead Girl,Rob Zombie
+2,19,Psycho,Once Is Not Enough,Howie B
+2,20,Psycho,Psycho,Teddy Thompson
+2,21,Psycho,Screaming,Pet Shop Boys
+2,22,Psycho,Psycho Future,Girls Against Boys
+2,23,Psycho,Honeymoon Suite,Thievery Corporation
+2,24,Psycho,The Murder,Danny Elfman
+2,25,Psycho,Madhouse,Mono
+2,26,Psycho,Psycho Killer,James Hall
+2,27,Psycho,All of My Life,Steve Earle
+2,28,Psycho,Fly,Lamb
+2,29,Psycho,In The End,Lionrock
+2,30,Psycho,The Finale,Danny Elfman
+3,31,Dahmer,Just out of Reach ,Patsy Cline 
+3,32,Dahmer,Take a Picture ,Trailer Park Avenue
+3,33,Dahmer,Keep on Doin' Your Thing ,Jean Wells 
+3,34,Dahmer,I Love Payback ,Mr. Payback 
+3,35,Dahmer,Vinyl & Polyester ,DJ Phenix
+3,36,Dahmer,You're Movin' Me,Clyde McPhatter
+3,37,Dahmer,Rubber Aliens ,DJ Phenix
+3,38,Dahmer,Ring My Bell ,Anita Ward 
+3,39,Dahmer,More More More ,Andrea True Connection 
+3,40,Dahmer,Clubland,Audio Ninja & Dr. Alex Tsisserev
+3,41,Dahmer,Tallahassee Lassie ,Freddie Cannon
+3,42,Dahmer,Architect of Light ,A Brand New Brand Of Energy 
+3,43,Dahmer,Every Beat of My Heart ,Gladys Knight & The Pips 
+3,44,Dahmer,So Close to Being in Love ,Clyde McPhatter 
+4,45,Monster,All She Wants Is ,Duran Duran 
+4,46,Monster,Space Age Love Song ,A Flock of Seagulls 
+4,47,Monster,Shake Your Groove Thing ,Peaches & Herb 
+4,48,Monster,Tide Is High ,Blondie 
+4,49,Monster,What You Need ,INXS 
+4,50,Monster,Don't Stop Believin' ,Journey
+4,51,Monster,Sugar and Spice ,The Searchers 
+4,52,Monster,Secret Crush On You ,Al Gross 
+4,53,Monster,Where Do I Begin ,The Chemical Brothers 
+4,54,Monster,Flirtin' With Disaster ,Molly Hatchet 
+4,55,Monster,Crimson and Clover ,Tommy James & The Shondells 
+4,56,Monster,Keep on Loving You ,REO Speedwagon 
+4,57,Monster,Crazy Girl ,Molly Pasutti 
+4,58,Monster,Do You Wanna Touch Me (Oh Yeah) ,Jett and The Blackhearts
+4,59,Monster,A Road Runner: Road Runner's 'G' Jam ,Humble Pie 
+4,60,Monster,Sweet Peace and Time ,Humble Pie 
+4,61,Monster,Lemon Balm and Chamomile ,BT featuring Che Malcolm 
+5,62,Halloween,Halloween Theme – Main Title,John Carpenter
+5,63,Halloween,Laurie's Theme,John Carpenter
+5,64,Halloween,Shape Escapes,John Carpenter
+5,65,Halloween,Myers' House,John Carpenter
+5,66,Halloween,Michael Kills Judith,John Carpenter
+5,67,Halloween,Loomis and Shape's Car,John Carpenter
+5,68,Halloween,The Haunted House,John Carpenter
+5,69,Halloween,The Shape Lurks,John Carpenter
+5,70,Halloween,Laurie Knows,John Carpenter
+5,71,Halloween,Better Check the Kids,John Carpenter
+5,72,Halloween,The Shape Stalks,John Carpenter
+6,73,Henry: Portrait of A Serial Killer,Too Old for These Blues ,Kid Tater and The Cheaters 
+6,74,Henry: Portrait of A Serial Killer,LeLania,Kid Tater and The Cheaters 
+6,75,Henry: Portrait of A Serial Killer,Lavalite Waltz ,Dan Haberkorn 
+6,76,Henry: Portrait of A Serial Killer,Waiting in the Garden ,Brisance
+6,77,Henry: Portrait of A Serial Killer,Fingers on It ,Enough Z'Nuff
+6,78,Henry: Portrait of A Serial Killer,Callin' Colleen ,Kid Tater and The Cheaters 
+6,79,Henry: Portrait of A Serial Killer,Don't You Know ,Fawn
+6,80,Henry: Portrait of A Serial Killer,Jukin,Kid Tater and The Cheaters 
+6,81,Henry: Portrait of A Serial Killer,There's Another Girl ,Kid Tater and The Cheaters 
+6,82,Henry: Portrait of A Serial Killer,Psycho,The Sonics 
+6,83,Henry: Portrait of A Serial Killer,Morning Dew ,Fawn
+6,84,Henry: Portrait of A Serial Killer,My Mistake ,Lynne and the Lizards 
+6,85,Henry: Portrait of A Serial Killer,No Father in the Family ,E.I.E.I.O. 
+7,86,To Catch a Killer,NULL,NULL
+8,87,American Psycho,True Faith ,New Order 
+8,88,American Psycho,Walking on Sunshine ,Katrina and the Waves
+8,89,American Psycho,Simply Irresistible ,Robert Palmer 
+8,90,American Psycho,I Touch Roses ,Book of Love 
+8,91,American Psycho,Hip to Be Square ,Huey Lewis & The News 
+8,92,American Psycho,Lady in Red ,Chris De Burgh 
+8,93,American Psycho,In Too Deep ,Genesis 
+8,94,American Psycho,Sussudio,Phil Collins 
+8,95,American Psycho,What's On Your Mind? (Pure Energy) ,Information Society 
+8,96,American Psycho,The Greatest Love Of All ,London Philharmonic Orchestra
+8,97,American Psycho,Paid In Full (Coldcut Remix) ,Eric B. & Rakim 
+8,98,American Psycho,Music for 18 Synths ,Sheldon Steiger 
+8,99,American Psycho,Secreil Nicht ,The Mediaeval Baebes
+8,100,American Psycho,Everlasting Love ,NULL
+8,101,American Psycho,Deck the Halls ,NULL
+8,102,American Psycho,Joy to the World ,NULL
+8,103,American Psycho,Ya Llegaron A La Luna ,Santiago Jiménez Jr. 
+8,104,American Psycho,Cuatro Milpas ,Francisco Gonzalez 
+8,105,American Psycho,Suicide ,John Cale 
+8,106,American Psycho,If You Don't Know MeNow ,Simply Red 
+8,107,American Psycho,Pump Up the Volume ,Marrs 
+8,108,American Psycho,Red Lights ,Curiosity Killed the Cat
+8,109,American Psycho,Try to Dismember ,Mj Mynarski 
+8,110,American Psycho,Trouble,Daniel Ash 
+9,111,Zodiac,Sky Pilot,Eric Burden & The Animals 0   
+9,112,Zodiac,Soul Sacrifice,Santana
+9,113,Zodiac,Bernadette,The Four Tops 
+9,114,Zodiac,(I Never Promised You A) Rose Garden,Lynn Anderson 
+9,115,Zodiac, Want to Take You Higher,Sly & The Family Stone 
+9,116,Zodiac,Hyperbolicsyllabicsesquedalymistic   ,Isaac Hayes 
+9,117,Zodiac,Inner City Blues (Make Me Wanna Holler) ,Marvin Gaye & Tammi Terrell 
+9,118,Zodiac,Brother Louie,Stories
+9,119,Zodiac,Hurdy Gurdy Man   ,Donovan
+9,120,Zodiac,It's Not For Me To Say   ,Johnny Mathis
+9,121,Zodiac,  Mary's Blues,John Coltrane 
+9,122,Zodiac,Solar,Miles Davis
+9,123,Zodiac,  Johnny Mann Singers,The Sound of the City
+9,124,Zodiac,Deacon Blues ,Steely Dan
+9,125,Zodiac,Lowdown,Boz Scaggs
+10,126,The Silence of the Lambs,American Girl ,Tom Petty and the Heartbreakers
+10,127,The Silence of the Lambs,Alone,Colin Newman 
+10,128,The Silence of the Lambs,Sunny Day ,Book of Love 
+10,129,The Silence of the Lambs,Real Men ,Savage Republic 
+10,130,The Silence of the Lambs,Goldberg Variations ,Jerry Zimmerman 
+10,131,The Silence of the Lambs,Goodbye Horses ,Q. Lazzarus
+10,132,The Silence of the Lambs,Hip Priest ,The Fall 
+10,133,The Silence of the Lambs,Lanmò Nan Zile A ,Les Freres Parent 
+10,134,The Silence of the Lambs,Rock of Ages ,NULL
+10,135,The Silence of the Lambs,The Magic Flute ,NULL
+11,136,The Texas Chainsaw Massacre,Immortally Insane,Pantera
+11,137,The Texas Chainsaw Massacre,Below the Bottom,Hatebreed
+11,138,The Texas Chainsaw Massacre,Pride,SOiL
+11,139,The Texas Chainsaw Massacre,Deliver Me,Static-X
+11,140,The Texas Chainsaw Massacre,43,Mushroomhead
+11,141,The Texas Chainsaw Massacre,Pig,Seether
+11,142,The Texas Chainsaw Massacre,Down In Flames,Nothingface
+11,143,The Texas Chainsaw Massacre,Self-Medicate,40 Below Summer
+11,144,The Texas Chainsaw Massacre,Suffocate,Motorgrater
+11,145,The Texas Chainsaw Massacre,Destroyer of Senses,Shadows Fall
+11,146,The Texas Chainsaw Massacre,Rational Gaze,Meshuggah
+11,147,The Texas Chainsaw Massacre,Archetype (Remix),Fear Factory
+11,148,The Texas Chainsaw Massacre,EnshrinedGrace,Morbid Angel
+11,149,The Texas Chainsaw Massacre,Listen,Index Case
+11,150,The Texas Chainsaw Massacre,Stay in Shadow,Finger Eleven
+11,151,The Texas Chainsaw Massacre,RuinLamb of ,God
+11,152,The Texas Chainsaw Massacre,As Real As It Gets,Sworn Enemy
+11,153,The Texas Chainsaw Massacre,Five Months,Coretez
+12,154,The Boston Strangler ,Semper Fidelis ,NULL
+12,155,The Boston Strangler ,There Will Never Be Another You ,NULL
+12,156,The Boston Strangler ,Give Me the Simple Life ,NULL
+12,157,The Boston Strangler ,Again ,NULL
+12,158,The Boston Strangler ,A Certain Smile ,NULL
+13,159,The Deliberate Stranger,NULL,NULL
+14,160,Wolf Creek ,Sunshine,78 Saab 
+14,161,Wolf Creek ,Eagle Rock ,Daddy Cool 
+14,162,Wolf Creek ,Double the Bass ,SystemBot 
+14,163,Wolf Creek ,Rx8 ,SystemBot 
+14,164,Wolf Creek ,You're No Good to Me ,SystemBot 
+14,165,Wolf Creek ,Devils Ride ,Col Finley 
+15,166,Summer of Sam,Fernando,ABBA 
+15,167,Summer of Sam,Boogie Nights,Heatwave
+15,168,Summer of Sam,Let No Man Put Asunder,First Choice
+15,169,Summer of Sam,There Bur for the Grace of God I Go,Machine
+15,170,Summer of Sam,Running Away,Roy Ayers
+15,171,Summer of Sam,Fooled Around and Fell in Love ,Elvin Bishop 
+15,172,Summer of Sam,Come Rain or Come Shine ,Mike Starr 
+15,173,Summer of Sam,Hello from the Gutters ,NULL
+15,174,Summer of Sam,Best of My Love ,The Emotions 
+15,175,Summer of Sam,Dance With Me ,Peter Brown
+15,176,Summer of Sam,Got to Give It Up ,Marvin Gaye 
+15,177,Summer of Sam,La Vie en Rose ,Grace Jones 
+15,178,Summer of Sam,It's Ecstasy When You Lay Down Next to Me ,Barry White
+15,179,Summer of Sam,Short Shorts ,NULL
+15,180,Summer of Sam,Psycho Killer ,Talking Heads 
+15,181,Summer of Sam,Baba O'Riley ,The Who 
+15,182,Summer of Sam,Everybody Dance ,Chic 
+15,183,Summer of Sam,Galaxy ,War 
+15,184,Summer of Sam,Don't Go Breaking My Heart ,Elton John and Kiki Dee 
+15,185,Summer of Sam,Dancing Queen ,ABBA 
+15,186,Summer of Sam,Love Is the Message ,MFSB
+15,187,Summer of Sam,Let's All Chant ,Michael Zager Band 
+15,188,Summer of Sam,Don't Leave Me This Way ,Thelma Houston 
+15,189,Summer of Sam,Skull Grenade ,L.E.S. Stitches 
+15,190,Summer of Sam,Won't Get Fooled Again ,The Who 
+15,191,Summer of Sam,"Theme from New York, New York ",Frank Sinatra 
+15,192,Summer of Sam,Summertime Blues ,The Who 
+16,193,Eaten Alive,NULL,NULL
+17,194,10 Rillington Place,NULL,NULL
+18,195,Conversations With a Killer: The Ted Bundy Tapes,NULL,NULL
+19,196,Scream,Don't Fear The Reaper ,Gus Black
+19,197,Scream,Whisper ,Catherine 
+19,198,Scream,Artificial World,Julee Cruise with The Flow 
+19,199,Scream,Red Right Hand ,Nick Cave and The Bad Seeds
+19,200,Scream,Better Than Me ,Sister Machine Gun 
+19,201,Scream,School's Out ,Alice Cooper 
+19,202,Scream,Youth Of America ,Birdbrain
+19,203,Scream,Bitter Pill ,The Connells 
+19,204,Scream,Drop Dead Gorgeous ,Republica 
+19,205,Scream,First Cool Hive ,Moby 
+19,206,Scream,Whisper To A Scream ,SoHo
+19,207,Scream,I Don't Care ,"Dillon Dixon, Marco Beltrami & Steve Carnelli "
+20,208,Gacy,Get Your Own,Erik Godal
+20,209,Gacy,Everythings Big in Texas,Erik Godal
+20,210,Gacy,Run Rabbit,Erik Godal
+20,211,Gacy,Julie Dances,Erik Godal
+20,212,Gacy,Des'ree,Erik Godal
+20,213,Gacy,Get Your Own,Erik Godal
+20,214,Gacy,Camera,Erik Godal
+20,215,Gacy,I'm Moving On,Mark Fontana
+20,216,Gacy,Get Your Own,Mark Fontana
+20,217,Gacy,Julie Dances,Sleeping Dogs
+20,218,Gacy,Can't Keep your Body Off My Mind,Rumble Bees:
+20,219,Gacy,Get Your Own,Riviera '64
+21,220,From Hell,The Nobodies – Wormwood Remix,Marilyn Manson
+21,221,From Hell,In Memoriam,Trevor Jones
+21,222,From Hell,Royal Connections,Trevor Jones
+21,223,From Hell,A Sprig of Red Grapes,Trevor Jones
+21,224,From Hell,Whitechapel Murders,Trevor Jones
+21,225,From Hell,Chasing the Dragon,Trevor Jones
+21,226,From Hell,Portrait of a Prince,Trevor Jones
+21,227,From Hell,The Compass and the Ruler,Trevor Jones
+21,228,From Hell,Marylebone Workhouse,Trevor Jones
+21,229,From Hell,Investigation,Trevor Jones
+21,230,From Hell,Death Coach,Trevor Jones
+21,231,From Hell,Pennies for the Ferryman,Trevor Jones
+21,232,From Hell,Bow Bell (Absinthium),Trevor Jones
+22,233,Red Dragon,Oriental Blues ,Tony DeSimone
+22,234,Red Dragon,Ready Eddy ,Barney Bigard and His Orchestra
+22,235,Red Dragon,Lament for Javanette ,Barney Bigard and His Orchestra
+22,236,Red Dragon,Passion Flower ,Johnny Hodges and His Orchestra 
+22,237,Red Dragon,Scherzo,NULL
+22,238,Red Dragon,Prelude in F minor ,NULL
+23,239,Kalifornia,Look Up to the Sky ,The Indians 
+23,240,Kalifornia,Deep,East 17 
+23,241,Kalifornia,No One Said It Would Be Easy ,Sheryl Crow 
+23,242,Kalifornia,Born for Love ,David Baerwald 
+23,243,Kalifornia,Unfulfilled ,Quicksand 
+23,244,Kalifornia,Do You Need Some? ,Mind Bomb
+23,245,Kalifornia,When You Come Back ,Drivin' 'N' Cryin' 
+23,246,Kalifornia,89 Lines ,Daniel O'Brien 
+23,247,Kalifornia,Seven Days ,Hugh Harris 
+23,248,Kalifornia,Playin' in the Dirt ,Heather Myles 
+23,249,Kalifornia,Lettuce and Vodka ,X 
+23,250,Kalifornia,I Love the World ,The Indians 
+23,251,Kalifornia,Are You Strong Enough ,Sheryl Crow 
+23,252,Kalifornia,Come Home ,Pere Ubu 
+23,253,Kalifornia,Dive Bomber ,The Soup Dragons 
+23,254,Kalifornia,(Get Your Kicks on) Route 66 ,Asleep at the Wheel 
+23,255,Kalifornia,Symphony No. 8 in F Major Op. 93 ,Ludwig van Beethoven 
+23,256,Kalifornia,Accelerator,Therapy? 
+23,257,Kalifornia,Freebird,Lynyrd Skynyrd
+24,258,The Honeymoon Killers,"Symphonies Nos. 5, 6 & 9 ",NULL
+24,259,The Honeymoon Killers,Latin Lover ,Michael Reynolds
+24,260,The Honeymoon Killers,merica The Beautiful,Ann Harris 
+24,261,The Honeymoon Killers,The Battle Hymn Of The Republic ,Ann Harris 
+25,262,Who Killed Atlanta's Children?,NULL,NULL
+26,263,The Dating Game Killer ,NULL,NULL
+27,264,The Town that Dreaded Sundown,NULL,NULL
+28,265,Rampage,NULL,NULL
+29,266,Badlands,Trois Morceaux En Forme De Poire,Erik Satie
+29,267,Badlands,Musica Poetica ,Carl Orff:
+29,268,Badlands,LOVE IS STRANGE,Mickey Baker & Sylvia Robinson
+29,269,Badlands,A BLOSSOM FELL,Nat 'King
+29,270,Badlands,Gassenhauer,Carl Orff:
+29,271,Badlands,Passion,Carl Orff:
+29,272,Badlands,Die grauen Weiber,Carl Orff:
+29,273,Badlands,Mariae Geburt,Carl Orff:
+29,274,Badlands,Musik zu einem Puppenspiel,Gunild Keetman
+29,275,Badlands,Xylophonstucke,Gunild Keetman
+30,276,Natural Born Killers,"Waiting for the Miracle""",Leonard Cohen
+30,277,Natural Born Killers,Shitlist,L7
+30,278,Natural Born Killers,Moon over Greene County,Dan Zanes
+30,279,Natural Born Killers,Rock N Roll N*****,Patti Smith
+30,280,Natural Born Killers,Sweet Jane,Cowboy Junkies
+30,281,Natural Born Killers,You Belong to Me ,Bob Dylan
+30,282,Natural Born Killers,The Trembler ,Duane Eddy
+30,283,Natural Born Killers,Burn,Nine Inch Nails
+30,284,Natural Born Killers,Route 666,NULL
+30,285,Natural Born Killers,Totally Hot,NULL
+30,286,Natural Born Killers,Back in Baby’s Arms,Patsy Cline 
+30,287,Natural Born Killers,Taboo,Peter Gabriel and Nusrat Fateh Ali Khan
+30,288,Natural Born Killers,Sex is Violent,NULL
+30,289,Natural Born Killers,Histoy (Repeats Itself),A.O.S.
+30,290,Natural Born Killers,Something I Can Never Have,Nine Inch Nails
+30,291,Natural Born Killers,I Will Take You Home,Russel Means
+30,292,Natural Born Killers,Drums a Go-Go,The Hollywood Persuaders
+30,293,Natural Born Killers,Hungry Ants,NULL
+30,294,Natural Born Killers,The Day the N***** Took Over,Dr. Dre
+30,295,Natural Born Killers,Born Bad,Juliette Lewis
+30,296,Natural Born Killers,Fall of the Rebel Angels,Sergio Cervetti
+30,297,Natural Born Killers,Forkboy,Lard
+30,298,Natural Born Killers,Batonga in Batongaville,NULL
+30,299,Natural Born Killers,A Warm Place,Nine Inch Nails
+30,300,Natural Born Killers,"Allah, Mohammed, Char, Yaar",NULL
+30,301,Natural Born Killers,The Future,Leonard Cohen
+30,302,Natural Born Killers,What Would U Do?,Tha Dogg Pound
+31,303,The Hunt For The BTK Killer,NULL,NULL
+32,304,The Night Stalker,Manhattan,Darren McGavin
+33,305,Chicago Massacre: Richard Speck,NULL,NULL
+34,306,The Frozen Ground,Deadlocked,Zeenit
+34,307,The Frozen Ground,Take Me Home ,Pixie Revolution
+34,308,The Frozen Ground,I Always Tried ,The Kevin Fisher Band 
+34,309,The Frozen Ground,This Is Who I Am ,Susan Rose 
+34,310,The Frozen Ground,Susan Rose ,Real Time 
+34,311,The Frozen Ground,Hey ,Blue Shoes 
+34,312,The Frozen Ground,Heavy Metal Shuffle ,Reagan Youth 
+34,313,The Frozen Ground,Something About You ,Zeenit
+34,314,The Frozen Ground,If Ever 2 Hearts Weere Meant To Be ,Eric Scott and Co. 
+34,315,The Frozen Ground,These Walls Between ,Loosely Tight
+34,316,The Frozen Ground,Real Time ,Zeenit
+34,317,The Frozen Ground,Summers Sweet ,Killtube
+34,318,The Frozen Ground,At The Playground ,Killtube
+34,319,The Frozen Ground,Fates May Lie ,Snatch Magnet 
+34,320,The Frozen Ground,Walk My Way ,The Karma Killers 
+34,321,The Frozen Ground,Have a Ball ,Superpower
+34,322,The Frozen Ground,Play Me Like A Rhythm ,Funny Money 
+34,323,The Frozen Ground,Triumph Over Will ,The Rogues 
+34,324,The Frozen Ground,One Foot In The Grave ,Snatch Magnet 
+34,325,The Frozen Ground,Fightin Society ,Loosely Tight
+34,326,The Frozen Ground,Smoke From A Gun ,Fortune 
+34,327,The Frozen Ground,Waking All The Demons ,
+34,328,The Frozen Ground,Memory Finds You ,Nathan Picard and The Vacancy 
+34,329,The Frozen Ground,Let Me Go Crazy ,Loosely Tight
+34,330,The Frozen Ground,No Angel ,Pixie Revolution
+35,331,The Strangers,Sprout and The Bean ,Joanna Newsom 
+35,332,The Strangers,My First Lover ,Gillian Welch 
+35,333,The Strangers,Mama Tried ,Merle Haggard 
+35,334,The Strangers,"At My Window, Sad and Lonely ",Billy Bragg and Wilco 
+35,335,The Strangers,Hopeful,Jennifer O'Connor 
+35,336,The Strangers,Ariel Ramirez ,Richard Buckner 
+35,337,The Strangers,Home,Breaking Benjamin 
+36,338,Eaten Alive,NULL,NULL
+37,339,Ed Gein,Selfish Heart ,Ed Maxwell and Joel Sigerson 
+37,340,Ed Gein,Why Can't ,Ed Maxwell and Joel Sigerson 
+37,341,Ed Gein,Rainbow ,Shark 'n The Smoke 
+38,342,Speck,NULL,NULL
+39,343,My Friend Dahmer,5-7-0-5,City Boy
+39,344,My Friend Dahmer,You've Got Me,Zeus
+39,345,My Friend Dahmer,There's No Doubt from Bridge,Bridge
+39,346,My Friend Dahmer,Semper Fidelis,Bert Ferntheil
+39,347,My Friend Dahmer,Falling Out Of Love With Love ,Jay Ramsey
+39,348,My Friend Dahmer,Angel of the Wilderness,Craig Marsden
+39,349,My Friend Dahmer,Deal for Yourself,Faustus
+39,350,My Friend Dahmer,Another Lonely Night,Len Boone
+39,351,My Friend Dahmer,Goodbye to You,Slyder
+39,352,My Friend Dahmer,Animal Speaks,15-60-75 (The Numbers Band)
+39,353,My Friend Dahmer,Walking the Course,Tony Kinsey
+39,354,My Friend Dahmer,Petal on a Wind ,Basil Kirchin & Jack Nathan
+39,355,My Friend Dahmer,Mixed Doubles,Tony Kinsey
+39,356,My Friend Dahmer,Gimme Gimme Your Lovin' ,Mac & Katie Kissoon
+39,357,My Friend Dahmer,On and On,Stephen Bishop
+39,358,My Friend Dahmer,Day After Day,Badfinger
+39,359,My Friend Dahmer,Boogie On Up ,Rokotto
+39,360,My Friend Dahmer,Rubber City Rebels ,Rubber City Rebels
+39,361,My Friend Dahmer,Detention ,The Dissidents
+39,362,My Friend Dahmer,Jason B. Sad ,T. Rex
+39,363,My Friend Dahmer,It's Not Too Late ,Christopher Blue 
+39,364,My Friend Dahmer,Love Hasn't Been Here ,Michael Stanley Band 
+39,365,My Friend Dahmer,Lady Doubonette ,The Bizzarros 
+40,366,Out of the Darkness,NULL,NULL
+41,367,The Gray Man,NULL,NULL
+42,368,Green River Killer,NULL,NULL
+43,369,The Iceman,NULL,NULL
+44,370,Killer: A Journal of Murder,BLUEBIRDS,Bill Elliott & His Orchestra 
+44,371,Killer: A Journal of Murder,I LIKE TO PET ,Bill Elliott & His Orchestra 
+44,372,Killer: A Journal of Murder,YOU NEVER CARED ,Bill Elliott & His Orchestra 
+44,373,Killer: A Journal of Murder,I DON'T WANT TO PLAY IN YOUR YARD ,Bill Elliott & His Orchestra 
+44,374,Killer: A Journal of Murder,TONIGHT I'M GOIN' OUT WITH YOU ,Bill Elliott & His Orchestra 
+44,375,Killer: A Journal of Murder,A NICKEL FOR COFFEE ,Bill Elliott & His Orchestra 
+44,376,Killer: A Journal of Murder,WILDWOOD ,Bill Elliott & His Orchestra 
+44,377,Killer: A Journal of Murder,WE TRIED TO REACH FOR THE MOON ,Bill Elliott & His Orchestra 
+44,378,Killer: A Journal of Murder,MY BABY SAID SHE'S MARRY ME ,Bill Elliott & His Orchestra 
