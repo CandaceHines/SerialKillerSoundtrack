@@ -2,6 +2,8 @@
 Code Louisville SQL Final Project 
 
 
+3 tables, scripted so everything is contained in a single file.
+
 
 Requirements: 
       
