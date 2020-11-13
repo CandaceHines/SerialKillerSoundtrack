@@ -1,4 +1,7 @@
-﻿--List of Serial Killers Table--
+﻿--Create Database
+CREATE DATABASE [SerialKillerSoundtrack]
+
+--List of Serial Killers Table--
 CREATE TABLE [dbo].[SerialKillers](
 	[Name] [varchar](27) PRIMARY KEY NOT NULL,
 	[YearsActive] [varchar](15) ,
@@ -11,7 +14,7 @@ CREATE TABLE [dbo].[SerialKillers](
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Ables, Tony', N'1970-1990', 4, N'4', N'Sentenced to death; commuted to life imprisonment', N'Murdered robbery victim in 1970 and at least three women until 1990 in St Petersburg Florida')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Ackroyd, John Arthur', N'1976-1992', 1, N'3', N'Died in prison', N'Suspected in multiple murders along Orens Highway 20')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Adams, Edward J', N'1920-1921', 7, N'7', N'Killed by police during shootout', N'Criminal who murdered seven people including three policemen')
-INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Alcala, Rodney', N'1971-1979', 8, N'50-130', N'Sentenced to death', N'Sometimes called the Dating Game Killer because of his 1978 appearance on the television show The Dating Game in the midst of his murder spree')
+INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Alcala, Rodney', N'1971-1979', 8, N'130', N'Sentenced to death', N'Sometimes called the Dating Game Killer because of his 1978 appearance on the television show The Dating Game in the midst of his murder spree')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Allen Howard', N'1974-1987', 3, N'3', N'Incarcerated for 60 years', N'Preyed on the elderly in Indiana Death sentence commuted')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Allen, Quincy', N'2002', 4, N'4', N'Sentenced to death', N'Murdered four people in North and South Carolina between July-August 2002')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Angelo, Richard', N'1987', 4, N'10', N'Sentenced to 50 years to life in prison', N'Long Island nurse who poisoned patients in his care')
@@ -56,7 +59,7 @@ INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleV
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Buenoano, Judy', N'1971-1983', 3, N'3', N'Executed 1998', N'Caught in 1983 after poisoning and car bombing a fiancÃ©e')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Bunday, Thomas', N'1979-1981', 5, N'6', N'Died in an intentional motorcycle crash', N'Never arrested as he was released after interrogation on a technicality')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Bundy, Carol M', N'1980', 7, N'7', N'Died in prison', N'With accomplice Doug Clark known as the Sunset Strip Killers')
-INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Bundy, Ted', N'1971-1978', 28, N'30', N'Executed 1989', N'')
+INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Bundy, Ted', N'1971-1978', 28, N'30', N'Executed 1989', N'One of the most well-known serial killers in modern day history')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Buono, Jr Angelo', N'1977-1978', 9, N'10', N'Died in prison', N'Along with accomplice Kenneth Bianchi known as the Hillside Stranglers Murdered young women in Los Angeles')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Butler, Eugene', N'1900-1906', 6, N'6', N'Died in North Dakota State Hospital', N'Crimes discovered two years after his death')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Cannon, Patty', N'1802-1829', 4, N'25', N'Died in prison awaiting trial', N'Gang leader who kidnapped slaves and free blacks to either sell or torture them')
@@ -89,7 +92,7 @@ INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleV
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Corona, Juan', N'1971', 25, N'25', N'Died in prison', N'Majority of victims had been transient workers')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Corwin, Daniel Lee', N'1987', 3, N'3', N'Executed 1998', N'Abducted and killed three women around Texas')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Costa, Tony', N'1968-1969', 4, N'8', N'Committed suicide in prison', N'Preyed on women in and around Truro Massachusetts')
-INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Cottingham, Richard', N'1967-1980', 9, N'85-100', N'Sentenced to life imprisonment', N'Known variously as the Butcher of Times Square the Torso Killer the New York City Ripper and the Times Square Torso Ripper')
+INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Cottingham, Richard', N'1967-1980', 9, N'100', N'Sentenced to life imprisonment', N'Known variously as the Butcher of Times Square the Torso Killer the New York City Ripper and the Times Square Torso Ripper')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Cowan, Mary', N'1884-1894', 6, N'6', N'Died in prison', N'Known as The Borgia of Maine')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Cox, Frederick Pete', N'1997', 3, N'3', N'Sentenced to life imprisonment', N'Murdered prostitutes in Orlando Florida')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Cox, Scott William', N'1980s-1990', 2, N'20', N'Granted parole in 2013', N'')
@@ -127,7 +130,6 @@ INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleV
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Feigenbaum, Carl', N'1888-1894', 1, N'13', N'Executed 1896', N'German sailor who murdered his landlord in 1894; allegedly responsible for murders in other countries also suspect in the Jack the Ripper case')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Fernandez, Raymond', N'1947-1949', 3, N'20', N'Executed 1951', N'Along with accomplice Martha Beck became known as the Lonely Hearts Killers')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Fish, Albert', N'1924-1932', 3, N'8', N'Executed 1936', N'Also known as the Werewolf of Wysteria; sadist and pedophile who cannibalized several children')
-INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Fisher, Lavinia', N'-1819', 0, N'Numerous', N'Executed 1820', N'Along with her husband John was a member of a highway gang; allegedly killed travelers visiting her inn')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Ford, Wayne Adam', N'1997-1998', 4, N'4', N'Sentenced to death', N'Killed and mutilated four women in California')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Fowler, Bobby Jack', N'1973-1996', 1, N'20', N'Died in prison', N'Convicted of one murder suspected of up to 20 more')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Francois, Kendall', N'1996-1998', 8, N'10', N'Died in prison', N'Known as the Poughkeepsie Killer')
@@ -228,7 +230,7 @@ INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleV
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Kraft, Randy', N'1971-1983', 16, N'67', N'Sentenced to death', N'Known as the Scorecard Killer and the Freeway Killer')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Krajcir, Timothy', N'1977-1982', 9, N'9', N'Sentenced to life imprisonment', N'Confessed to killing five women in Missouri and four others in Illinois and Pennsylvania')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Kudzinowski, Peter', N'1924-1928', 3, N'3', N'Executed 1929', N'')
-INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Kuklinski, Richard', N'1948-1986', 5, N'100-150', N'Died in prison', N'Mafia associate known as The Iceman')
+INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Kuklinski, Richard', N'1948-1986', 5, N'150', N'Died in prison', N'Mafia associate known as The Iceman')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Kunnecke, William', N'1898-1903', 1, N'3', N'Unknown', N'Escaped from prison in 1919')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'LaBarre, Sheila', N'2004-2006', 2, N'4', N'Sentenced to life imprisonment without parole', N'Claimed she was an angel sent by d to punish pedophiles')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Lake, Leonard', N'1983-1985', 11, N'25', N'Committed suicide while in custody', N'Along with accomplice Charles Ng they are also known as the Operation Miranda Killers')
@@ -273,7 +275,6 @@ INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleV
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Morris, Dontae', N'2010', 5, N'7', N'Sentenced to life imprisonment; later changed to the death sentence', N'Murdered three men in drug-related scandals as well as two policemen who tried to arrest him; also suspected in the deaths of two other men')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Mors, Frederick', N'1914-1915', 8, N'8', N'Unknown', N'Committed to Hudson River State Hospital; escaped in May 1916')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Moseley, Winston', N'1963-1964', 3, N'3', N'Died in prison', N'Necrophile who sexually assaulted and murdered three women including Kitty Genovese')
-INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Mosley, Eddie', N'1973-1987', 8, N'16', N'Died in prison', N'Raped and murdered numerous young girls and women in and around Fort Lauderdale Florida')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Muhammad, John Allen', N'2002', 7, N'17', N'Executed 2009', N'With accomplice Lee Boyd Malvo perpetrated the DC sniper attacks')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Mullin, Herbert', N'1972-1973', 11, N'13', N'Sentenced to life imprisonment', N'Eligible for parole in 2021')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Murphy, Donald', N'1979-1980', 2, N'6', N'Sentenced to 60 years imprisonment', N'Murdered between two and at least six prostitutes in Detroit; another man was wrongfully suspected of three murders')
@@ -424,57 +425,57 @@ CREATE TABLE [dbo].[Movies](
 	[Alias] [varchar](50) NOT NULL
 ) ON [PRIMARY]
 
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Extremely Wicked, Shockingly Evil and Vile', N'Ted ', N'Bundy', N'NULL')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Extremely Wicked, Shockingly Evil and Vile', N'Ted ', N'Bundy', N'')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Psycho', N'Ed ', N'Gein', N'Butcher of Plainfield')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Dahmer', N'Jeffrey', N'Dahmer', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Monster', N'Aileen', N'Wuornos', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Halloween', N'Edmund', N'Kemper', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Henry: Portrait of A Serial Killer', N'Henry Lee', N'Lucas', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'To Catch a Killer', N'John Wayne', N'Gacy', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'American Psycho', N'Ted ', N'Bundy', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Zodiac', N'NULL', N'NULL', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Gary Michael', N'Heidnik', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Ed ', N'Gein', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Edmund', N'Kemper', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Ted ', N'Bundy', N'NULL')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Dahmer', N'Jeffrey', N'Dahmer', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Monster', N'Aileen', N'Wuornos', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Halloween', N'Edmund', N'Kemper', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Henry: Portrait of A Serial Killer', N'Henry Lee', N'Lucas', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'To Catch a Killer', N'John Wayne', N'Gacy', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'American Psycho', N'Ted ', N'Bundy', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Zodiac', N'', N'', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Gary Michael', N'Heidnik', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Ed ', N'Gein', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Edmund', N'Kemper', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Ted ', N'Bundy', N'')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Texas Chainsaw Massacre', N'Ed ', N'Gein', N'Butcher of Plainfield')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Boston Strangler ', N'Albert', N'DeSalvo', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Deliberate Stranger', N'Ted ', N'Bundy', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Wolf Creek ', N'Ivan', N'Milat', N'NULL')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Boston Strangler ', N'Albert', N'DeSalvo', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Deliberate Stranger', N'Ted ', N'Bundy', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Wolf Creek ', N'Ivan', N'Milat', N'')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Summer of Sam', N'David', N'Berkowitz', N'Son of Sam')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Eaten Alive', N'Joe', N'Ball', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'10 Rillington Place', N'John Reginald', N'Christie', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Conversations With a Killer: The Ted Bundy Tapes', N'Ted ', N'Bundy', N'NULL')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Eaten Alive', N'Joe', N'Ball', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'10 Rillington Place', N'John Reginald', N'Christie', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Conversations With a Killer: The Ted Bundy Tapes', N'Ted ', N'Bundy', N'')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Scream', N'Danny', N'Rolling', N'Gainesville Ripper')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Gacy', N'John Wayne', N'Gacy', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'From Hell', N'NULL', N'NULL', N'Jack The Ripper')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Gacy', N'John Wayne', N'Gacy', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'From Hell', N'', N'', N'Jack The Ripper')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Red Dragon', N'Dennis', N'Rader', N'BTK Killer')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Kalifornia', N'Charles', N'Starkweather', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Kalifornia', N'Caril Ann', N'Fugate', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Honeymoon Killers', N'Raymond', N'Fernandez', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Honeymoon Killers', N'Martha', N'Beck', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Who Killed Atlanta''s Children?', N'Wayne Bertram', N'Williams', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Dating Game Killer ', N'Rodney', N'Alcala', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Town that Dreaded Sundown', N'NULL', N'NULL', N'The Town that Dreaded Sundown')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Kalifornia', N'Charles', N'Starkweather', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Kalifornia', N'Caril Ann', N'Fugate', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Honeymoon Killers', N'Raymond', N'Fernandez', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Honeymoon Killers', N'Martha', N'Beck', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Who Killed Atlanta''s Children?', N'Wayne Bertram', N'Williams', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Dating Game Killer ', N'Rodney', N'Alcala', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Town that Dreaded Sundown', N'', N'', N'The Town that Dreaded Sundown')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Rampage', N'Richard', N'Chase', N'Vampire of Sacramento')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Badlands', N'Charles', N'Starkweather', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Badlands', N'Caril Ann', N'Fugate', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Natural Born Killers', N'Charles', N'Starkweather', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Natural Born Killers', N'Caril Ann', N'Fugate', N'NULL')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Badlands', N'Charles', N'Starkweather', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Badlands', N'Caril Ann', N'Fugate', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Natural Born Killers', N'Charles', N'Starkweather', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Natural Born Killers', N'Caril Ann', N'Fugate', N'')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Hunt For The BTK Killer', N'Dennis', N'Rader', N'BTK Killer')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Night Stalker', N'Richard', N'Ramirez', N'The Nightstalker')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Chicago Massacre: Richard Speck', N'Richard', N'Speck', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Frozen Ground', N'Robert', N'Hansen', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Strangers', N'NULL', N'NULL', N'The Manson Family')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Chicago Massacre: Richard Speck', N'Richard', N'Speck', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Frozen Ground', N'Robert', N'Hansen', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Strangers', N'', N'', N'The Manson Family')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Eaten Alive', N'Joe', N'Ball', N'The Alligator Man')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Ed Gein', N'Ed ', N'Gein', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Speck', N'Richard', N'Speck', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'My Friend Dahmer', N'Jeffrey', N'Dahmer', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Out of the Darkness', N'David', N'Berkowitz', N'NULL')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Gray Man', N'Albert', N'Fish', N'NULL')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Ed Gein', N'Ed ', N'Gein', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Speck', N'Richard', N'Speck', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'My Friend Dahmer', N'Jeffrey', N'Dahmer', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Out of the Darkness', N'David', N'Berkowitz', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Gray Man', N'Albert', N'Fish', N'')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Green River Killer', N'Gary', N'Ridgeway', N'Green River Killer')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Iceman', N'Richard', N'Kuklinski', N'The Iceman')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Killer: A Journal of Murder', N'Carl', N'Panzram ', N'NULL')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Killer: A Journal of Murder', N'Carl', N'Panzram ', N'')
 
 --Soundtrack Table--
 CREATE TABLE [dbo].[Soundtracks](
@@ -571,7 +572,7 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (6, 83, N'Henry: Portrait of A Serial Killer', N'Morning Dew ', N'Fawn')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (6, 84, N'Henry: Portrait of A Serial Killer', N'My Mistake ', N'Lynne and the Lizards ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (6, 85, N'Henry: Portrait of A Serial Killer', N'No Father in the Family ', N'E.I.E.I.O. ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (7, 86, N'To Catch a Killer', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (7, 86, N'To Catch a Killer', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 87, N'American Psycho', N'True Faith ', N'New Order ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 88, N'American Psycho', N'Walking on Sunshine ', N'Katrina and the Waves')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 89, N'American Psycho', N'Simply Irresistible ', N'Robert Palmer ')
@@ -585,9 +586,9 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 97, N'American Psycho', N'Paid In Full (Coldcut Remix) ', N'Eric B. & Rakim ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 98, N'American Psycho', N'Music for 18 Synths ', N'Sheldon Steiger ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 99, N'American Psycho', N'Secreil Nicht ', N'The Mediaeval Baebes')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 100, N'American Psycho', N'Everlasting Love ', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 101, N'American Psycho', N'Deck the Halls ', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 102, N'American Psycho', N'Joy to the World ', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 100, N'American Psycho', N'Everlasting Love ', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 101, N'American Psycho', N'Deck the Halls ', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 102, N'American Psycho', N'Joy to the World ', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 103, N'American Psycho', N'Ya Llegaron A La Luna ', N'Santiago Jiménez Jr. ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 104, N'American Psycho', N'Cuatro Milpas ', N'Francisco Gonzalez ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (8, 105, N'American Psycho', N'Suicide ', N'John Cale ')
@@ -619,8 +620,8 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (10, 131, N'The Silence of the Lambs', N'Goodbye Horses ', N'Q. Lazzarus')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (10, 132, N'The Silence of the Lambs', N'Hip Priest ', N'The Fall ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (10, 133, N'The Silence of the Lambs', N'Lanmò Nan Zile A ', N'Les Freres Parent ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (10, 134, N'The Silence of the Lambs', N'Rock of Ages ', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (10, 135, N'The Silence of the Lambs', N'The Magic Flute ', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (10, 134, N'The Silence of the Lambs', N'Rock of Ages ', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (10, 135, N'The Silence of the Lambs', N'The Magic Flute ', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (11, 136, N'The Texas Chainsaw Massacre', N'Immortally Insane', N'Pantera')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (11, 137, N'The Texas Chainsaw Massacre', N'Below the Bottom', N'Hatebreed')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (11, 138, N'The Texas Chainsaw Massacre', N'Pride', N'SOiL')
@@ -639,12 +640,12 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (11, 151, N'The Texas Chainsaw Massacre', N'RuinLamb of ', N'God')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (11, 152, N'The Texas Chainsaw Massacre', N'As Real As It Gets', N'Sworn Enemy')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (11, 153, N'The Texas Chainsaw Massacre', N'Five Months', N'Coretez')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 154, N'The Boston Strangler ', N'Semper Fidelis ', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 155, N'The Boston Strangler ', N'There Will Never Be Another You ', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 156, N'The Boston Strangler ', N'Give Me the Simple Life ', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 157, N'The Boston Strangler ', N'Again ', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 158, N'The Boston Strangler ', N'A Certain Smile ', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (13, 159, N'The Deliberate Stranger', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 154, N'The Boston Strangler ', N'Semper Fidelis ', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 155, N'The Boston Strangler ', N'There Will Never Be Another You ', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 156, N'The Boston Strangler ', N'Give Me the Simple Life ', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 157, N'The Boston Strangler ', N'Again ', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (12, 158, N'The Boston Strangler ', N'A Certain Smile ', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (13, 159, N'The Deliberate Stranger', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (14, 160, N'Wolf Creek ', N'Sunshine', N'78 Saab ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (14, 161, N'Wolf Creek ', N'Eagle Rock ', N'Daddy Cool ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (14, 162, N'Wolf Creek ', N'Double the Bass ', N'SystemBot ')
@@ -658,13 +659,13 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 170, N'Summer of Sam', N'Running Away', N'Roy Ayers')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 171, N'Summer of Sam', N'Fooled Around and Fell in Love ', N'Elvin Bishop ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 172, N'Summer of Sam', N'Come Rain or Come Shine ', N'Mike Starr ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 173, N'Summer of Sam', N'Hello from the Gutters ', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 173, N'Summer of Sam', N'Hello from the Gutters ', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 174, N'Summer of Sam', N'Best of My Love ', N'The Emotions ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 175, N'Summer of Sam', N'Dance With Me ', N'Peter Brown')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 176, N'Summer of Sam', N'Got to Give It Up ', N'Marvin Gaye ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 177, N'Summer of Sam', N'La Vie en Rose ', N'Grace Jones ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 178, N'Summer of Sam', N'It''s Ecstasy When You Lay Down Next to Me ', N'Barry White')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 179, N'Summer of Sam', N'Short Shorts ', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 179, N'Summer of Sam', N'Short Shorts ', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 180, N'Summer of Sam', N'Psycho Killer ', N'Talking Heads ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 181, N'Summer of Sam', N'Baba O''Riley ', N'The Who ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 182, N'Summer of Sam', N'Everybody Dance ', N'Chic ')
@@ -678,9 +679,9 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 190, N'Summer of Sam', N'Won''t Get Fooled Again ', N'The Who ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 191, N'Summer of Sam', N'Theme from New York, New York ', N'Frank Sinatra ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (15, 192, N'Summer of Sam', N'Summertime Blues ', N'The Who ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (16, 193, N'Eaten Alive', N'NULL', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (17, 194, N'10 Rillington Place', N'NULL', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (18, 195, N'Conversations With a Killer: The Ted Bundy Tapes', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (16, 193, N'Eaten Alive', N'', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (17, 194, N'10 Rillington Place', N'', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (18, 195, N'Conversations With a Killer: The Ted Bundy Tapes', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (19, 196, N'Scream', N'Don''t Fear The Reaper ', N'Gus Black')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (19, 197, N'Scream', N'Whisper ', N'Catherine ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (19, 198, N'Scream', N'Artificial World', N'Julee Cruise with The Flow ')
@@ -722,8 +723,8 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (22, 234, N'Red Dragon', N'Ready Eddy ', N'Barney Bigard and His Orchestra')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (22, 235, N'Red Dragon', N'Lament for Javanette ', N'Barney Bigard and His Orchestra')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (22, 236, N'Red Dragon', N'Passion Flower ', N'Johnny Hodges and His Orchestra ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (22, 237, N'Red Dragon', N'Scherzo', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (22, 238, N'Red Dragon', N'Prelude in F minor ', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (22, 237, N'Red Dragon', N'Scherzo', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (22, 238, N'Red Dragon', N'Prelude in F minor ', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (23, 239, N'Kalifornia', N'Look Up to the Sky ', N'The Indians ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (23, 240, N'Kalifornia', N'Deep', N'East 17 ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (23, 241, N'Kalifornia', N'No One Said It Would Be Easy ', N'Sheryl Crow ')
@@ -743,14 +744,14 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (23, 255, N'Kalifornia', N'Symphony No. 8 in F Major Op. 93 ', N'Ludwig van Beethoven ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (23, 256, N'Kalifornia', N'Accelerator', N'Therapy? ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (23, 257, N'Kalifornia', N'Freebird', N'Lynyrd Skynyrd')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (24, 258, N'The Honeymoon Killers', N'Symphonies Nos. 5, 6 & 9 ', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (24, 258, N'The Honeymoon Killers', N'Symphonies Nos. 5, 6 & 9 ', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (24, 259, N'The Honeymoon Killers', N'Latin Lover ', N'Michael Reynolds')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (24, 260, N'The Honeymoon Killers', N'merica The Beautiful', N'Ann Harris ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (24, 261, N'The Honeymoon Killers', N'The Battle Hymn Of The Republic ', N'Ann Harris ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (25, 262, N'Who Killed Atlanta''s Children?', N'NULL', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (26, 263, N'The Dating Game Killer ', N'NULL', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (27, 264, N'The Town that Dreaded Sundown', N'NULL', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (28, 265, N'Rampage', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (25, 262, N'Who Killed Atlanta''s Children?', N'', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (26, 263, N'The Dating Game Killer ', N'', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (27, 264, N'The Town that Dreaded Sundown', N'', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (28, 265, N'Rampage', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (29, 266, N'Badlands', N'Trois Morceaux En Forme De Poire', N'Erik Satie')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (29, 267, N'Badlands', N'Musica Poetica ', N'Carl Orff:')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (29, 268, N'Badlands', N'LOVE IS STRANGE', N'Mickey Baker & Sylvia Robinson')
@@ -769,28 +770,28 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 281, N'Natural Born Killers', N'You Belong to Me ', N'Bob Dylan')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 282, N'Natural Born Killers', N'The Trembler ', N'Duane Eddy')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 283, N'Natural Born Killers', N'Burn', N'Nine Inch Nails')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 284, N'Natural Born Killers', N'Route 666', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 285, N'Natural Born Killers', N'Totally Hot', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 284, N'Natural Born Killers', N'Route 666', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 285, N'Natural Born Killers', N'Totally Hot', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 286, N'Natural Born Killers', N'Back in Baby’s Arms', N'Patsy Cline ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 287, N'Natural Born Killers', N'Taboo', N'Peter Gabriel and Nusrat Fateh Ali Khan')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 288, N'Natural Born Killers', N'Sex is Violent', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 288, N'Natural Born Killers', N'Sex is Violent', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 289, N'Natural Born Killers', N'Histoy (Repeats Itself)', N'A.O.S.')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 290, N'Natural Born Killers', N'Something I Can Never Have', N'Nine Inch Nails')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 291, N'Natural Born Killers', N'I Will Take You Home', N'Russel Means')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 292, N'Natural Born Killers', N'Drums a Go-Go', N'The Hollywood Persuaders')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 293, N'Natural Born Killers', N'Hungry Ants', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 293, N'Natural Born Killers', N'Hungry Ants', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 294, N'Natural Born Killers', N'The Day the N***** Took Over', N'Dr. Dre')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 295, N'Natural Born Killers', N'Born Bad', N'Juliette Lewis')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 296, N'Natural Born Killers', N'Fall of the Rebel Angels', N'Sergio Cervetti')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 297, N'Natural Born Killers', N'Forkboy', N'Lard')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 298, N'Natural Born Killers', N'Batonga in Batongaville', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 298, N'Natural Born Killers', N'Batonga in Batongaville', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 299, N'Natural Born Killers', N'A Warm Place', N'Nine Inch Nails')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 300, N'Natural Born Killers', N'Allah, Mohammed, Char, Yaar', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 300, N'Natural Born Killers', N'Allah, Mohammed, Char, Yaar', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 301, N'Natural Born Killers', N'The Future', N'Leonard Cohen')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (30, 302, N'Natural Born Killers', N'What Would U Do?', N'Tha Dogg Pound')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (31, 303, N'The Hunt For The BTK Killer', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (31, 303, N'The Hunt For The BTK Killer', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (32, 304, N'The Night Stalker', N'Manhattan', N'Darren McGavin')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (33, 305, N'Chicago Massacre: Richard Speck', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (33, 305, N'Chicago Massacre: Richard Speck', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (34, 306, N'The Frozen Ground', N'Deadlocked', N'Zeenit')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (34, 307, N'The Frozen Ground', N'Take Me Home ', N'Pixie Revolution')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (34, 308, N'The Frozen Ground', N'I Always Tried ', N'The Kevin Fisher Band ')
@@ -823,11 +824,11 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (35, 335, N'The Strangers', N'Hopeful', N'Jennifer O''Connor ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (35, 336, N'The Strangers', N'Ariel Ramirez ', N'Richard Buckner ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (35, 337, N'The Strangers', N'Home', N'Breaking Benjamin ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (36, 338, N'Eaten Alive', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (36, 338, N'Eaten Alive', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (37, 339, N'Ed Gein', N'Selfish Heart ', N'Ed Maxwell and Joel Sigerson ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (37, 340, N'Ed Gein', N'Why Can''t ', N'Ed Maxwell and Joel Sigerson ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (37, 341, N'Ed Gein', N'Rainbow ', N'Shark ''n The Smoke ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (38, 342, N'Speck', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (38, 342, N'Speck', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (39, 343, N'My Friend Dahmer', N'5-7-0-5', N'City Boy')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (39, 344, N'My Friend Dahmer', N'You''ve Got Me', N'Zeus')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (39, 345, N'My Friend Dahmer', N'There''s No Doubt from Bridge', N'Bridge')
@@ -851,10 +852,10 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (39, 363, N'My Friend Dahmer', N'It''s Not Too Late ', N'Christopher Blue ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (39, 364, N'My Friend Dahmer', N'Love Hasn''t Been Here ', N'Michael Stanley Band ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (39, 365, N'My Friend Dahmer', N'Lady Doubonette ', N'The Bizzarros ')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (40, 366, N'Out of the Darkness', N'NULL', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (41, 367, N'The Gray Man', N'NULL', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (42, 368, N'Green River Killer', N'NULL', N'NULL')
-INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (43, 369, N'The Iceman', N'NULL', N'NULL')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (40, 366, N'Out of the Darkness', N'', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (41, 367, N'The Gray Man', N'', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (42, 368, N'Green River Killer', N'', N'')
+INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (43, 369, N'The Iceman', N'', N'')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (44, 370, N'Killer: A Journal of Murder', N'BLUEBIRDS', N'Bill Elliott & His Orchestra ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (44, 371, N'Killer: A Journal of Murder', N'I LIKE TO PET ', N'Bill Elliott & His Orchestra ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (44, 372, N'Killer: A Journal of Murder', N'YOU NEVER CARED ', N'Bill Elliott & His Orchestra ')
@@ -869,45 +870,64 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 --QUERIES
 
 --Write a SELECT query that uses a WHERE clause
-
+SELECT [Movie], [Song]
+FROM [dbo].[Soundtracks]
+WHERE [Artist] = 'Q. Lazzarus'
 
 --Write a  SELECT query that uses an OR and an AND operator
-
+SELECT
+FROM
+WHERE
 
 --Write a  SELECT query that filters NULL rows using IS NOT NULL
-
-
---Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
-
-
---Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
-
-
---Write a DML statement that DELETEs rows from a table that another table references. This script will have to also DELETE any records that reference these rows. Both of the DELETE statements need to be wrapped in a single TRANSACTION.
-
+SELECT [Movie], [Song], [Artist]
+FROM [dbo].[Soundtracks]
+WHERE [Artist] IS NOT NULL
 
 --Write a  SELECT query that utilizes a JOIN
-
+SELECT m.[MovieID]
+FROM [dbo].[Movies] m 
+JOIN [dbo].[Soundtracks] st
 
 --Write a  SELECT query that utilizes a JOIN with 3 or more tables
+SELECT m.[Title]
+FROM [dbo].[Soundtracks] st
+JOIN [dbo].[Movies] m, [dbo].[SerialKillers] sk
+ON 
 
 
 --Write a  SELECT query that utilizes a LEFT JOIN
-
+SELECT
+FROM
+LEFT JOIN 
 
 --Write a  SELECT query that utilizes a variable in the WHERE clause
+DECLARE @Dead int = 40
 
+SELECT [Name], [PossibleVictims], [Status]
+FROM [dbo].[SerialKillers]
+WHERE [PossibleVictims] < @Dead
 
 --Write a  SELECT query that utilizes a ORDER BY clause
-
+SELECT [Movie], [Song], [Artist]
+FROM [Soundtracks]
+ORDER BY [SongID] desc
 
 --Write a  SELECT query that utilizes a GROUP BY clause along with an aggregate function
+SELECT Count(Song), [Movie]
+FROM [dbo].[Soundtracks]
+WHERE [SongID] % 2 = 0
+GROUP BY [Movie]
 
-
---Write a SELECT query that utilizes a CALCULATED FIELD
+--Write a SELECT query that utilizes a CALCULATED FIELD -- possible victims - proven victims?
 
 
 --Write a SELECT query that utilizes a SUBQUERY
+SELECT [Name], [ProvenVictims], [Notes]
+FROM [dbo].[SerialKillers]
+WHERE [ProvenVictims] = (
+			SELECT Max(ProvenVictims)
+			FROM [dbo].[SerialKillers])
 
 
 --Write a SELECT query that utilizes a JOIN, at least 2 OPERATORS (AND, OR, =, IN, BETWEEN, ETC) AND A GROUP BY clause with an aggregate function
@@ -924,3 +944,11 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 
 --Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries
 
+
+--Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
+
+
+--Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
+
+
+--Write a DML statement that DELETEs rows from a table that another table references. This script will have to also DELETE any records that reference these rows. Both of the DELETE statements need to be wrapped in a single TRANSACTION.
