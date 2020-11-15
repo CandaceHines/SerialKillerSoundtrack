@@ -6,9 +6,9 @@ CREATE TABLE [dbo].[SerialKillers](
 	[Name] [varchar](27) PRIMARY KEY NOT NULL,
 	[YearsActive] [varchar](15) ,
 	[ProvenVictims] [int] ,
-	[PossibleVictims] [varchar](20) ,
-	[Status] [varchar](134) ,
-	[Notes] [varchar](454) 
+	[PossibleVictims] [int] ,
+	[Status] [varchar](150) ,
+	[Notes] [varchar](500) 
 ) ON [PRIMARY]
 
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Ables, Tony', N'1970-1990', 4, N'4', N'Sentenced to death; commuted to life imprisonment', N'Murdered robbery victim in 1970 and at least three women until 1990 in St Petersburg Florida')
@@ -419,63 +419,71 @@ INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleV
 
 --Movies Table--
 CREATE TABLE [dbo].[Movies](
-	[Title] [varchar](50) NOT NULL,
-	[SubjectFName] [varchar](30) NOT NULL,
-	[SubjectLName] [varchar](60) NOT NULL,
-	[Alias] [varchar](50) NOT NULL
+	[Title] [nvarchar](50) NOT NULL,
+	[SubjectFName] [nvarchar](50) NOT NULL,
+	[SubjectLName] [nvarchar](50) NOT NULL,
+	[Alias] [nvarchar](50) NOT NULL,
+	[YearReleased] [datetime2](7) NOT NULL
 ) ON [PRIMARY]
 
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Extremely Wicked, Shockingly Evil and Vile', N'Ted ', N'Bundy', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Psycho', N'Ed ', N'Gein', N'Butcher of Plainfield')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Dahmer', N'Jeffrey', N'Dahmer', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Monster', N'Aileen', N'Wuornos', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Halloween', N'Edmund', N'Kemper', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Henry: Portrait of A Serial Killer', N'Henry Lee', N'Lucas', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'To Catch a Killer', N'John Wayne', N'Gacy', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'American Psycho', N'Ted ', N'Bundy', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Zodiac', N'', N'', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Gary Michael', N'Heidnik', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Ed ', N'Gein', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Edmund', N'Kemper', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Silence of the Lambs', N'Ted ', N'Bundy', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Texas Chainsaw Massacre', N'Ed ', N'Gein', N'Butcher of Plainfield')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Boston Strangler ', N'Albert', N'DeSalvo', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Deliberate Stranger', N'Ted ', N'Bundy', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Wolf Creek ', N'Ivan', N'Milat', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Summer of Sam', N'David', N'Berkowitz', N'Son of Sam')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Eaten Alive', N'Joe', N'Ball', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'10 Rillington Place', N'John Reginald', N'Christie', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Conversations With a Killer: The Ted Bundy Tapes', N'Ted ', N'Bundy', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Scream', N'Danny', N'Rolling', N'Gainesville Ripper')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Gacy', N'John Wayne', N'Gacy', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'From Hell', N'', N'', N'Jack The Ripper')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Red Dragon', N'Dennis', N'Rader', N'BTK Killer')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Kalifornia', N'Charles', N'Starkweather', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Kalifornia', N'Caril Ann', N'Fugate', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Honeymoon Killers', N'Raymond', N'Fernandez', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Honeymoon Killers', N'Martha', N'Beck', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Who Killed Atlanta''s Children?', N'Wayne Bertram', N'Williams', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Dating Game Killer ', N'Rodney', N'Alcala', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Town that Dreaded Sundown', N'', N'', N'The Town that Dreaded Sundown')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Rampage', N'Richard', N'Chase', N'Vampire of Sacramento')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Badlands', N'Charles', N'Starkweather', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Badlands', N'Caril Ann', N'Fugate', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Natural Born Killers', N'Charles', N'Starkweather', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Natural Born Killers', N'Caril Ann', N'Fugate', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Hunt For The BTK Killer', N'Dennis', N'Rader', N'BTK Killer')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Night Stalker', N'Richard', N'Ramirez', N'The Nightstalker')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Chicago Massacre: Richard Speck', N'Richard', N'Speck', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Frozen Ground', N'Robert', N'Hansen', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Strangers', N'', N'', N'The Manson Family')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Eaten Alive', N'Joe', N'Ball', N'The Alligator Man')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Ed Gein', N'Ed ', N'Gein', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Speck', N'Richard', N'Speck', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'My Friend Dahmer', N'Jeffrey', N'Dahmer', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Out of the Darkness', N'David', N'Berkowitz', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Gray Man', N'Albert', N'Fish', N'')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Green River Killer', N'Gary', N'Ridgeway', N'Green River Killer')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'The Iceman', N'Richard', N'Kuklinski', N'The Iceman')
-INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias]) VALUES (N'Killer: A Journal of Murder', N'Carl', N'Panzram ', N'')
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Extremely Wicked, Shockingly Evil and Vile', N'Ted ', N'Bundy', N'NULL', CAST(N'2019-05-03T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Psycho', N'Ed ', N'Gein', N'Butcher of Plainfield', CAST(N'1998-12-04T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Dahmer', N'Jeffrey', N'Dahmer', N'NULL', CAST(N'2003-03-13T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Monster', N'Aileen', N'Wuornos', N'NULL', CAST(N'2003-01-30T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Halloween', N'Edmund', N'Kemper', N'NULL', CAST(N'1978-10-27T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Henry: Portrait of A Serial Killer', N'Henry Lee', N'Lucas', N'NULL', CAST(N'1990-09-07T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'To Catch a Killer', N'John Wayne', N'Gacy', N'NULL', CAST(N'1992-05-15T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'American Psycho', N'Ted ', N'Bundy', N'NULL', CAST(N'2000-04-14T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Zodiac', N'NULL', N'NULL', N'NULL', CAST(N'2007-03-02T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Silence of the Lambs', N'Gary Michael', N'Heidnik', N'NULL', CAST(N'1991-02-14T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Silence of the Lambs', N'Ed ', N'Gein', N'NULL', CAST(N'1991-02-14T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Silence of the Lambs', N'Edmund', N'Kemper', N'NULL', CAST(N'1991-02-14T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Silence of the Lambs', N'Ted ', N'Bundy', N'NULL', CAST(N'1991-02-14T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Texas Chainsaw Massacre', N'Ed ', N'Gein', N'Butcher of Plainfield', CAST(N'2003-10-17T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Boston Strangler ', N'Albert', N'DeSalvo', N'NULL', CAST(N'1968-10-16T00:00:00.0000000' AS DateTime2))
+GO
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Deliberate Stranger', N'Ted ', N'Bundy', N'NULL', CAST(N'1968-05-04T00:00:00.0000000' AS DateTime2))
+GO
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Wolf Creek ', N'Ivan', N'Milat', N'NULL', CAST(N'2005-12-25T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Summer of Sam', N'David', N'Berkowitz', N'Son of Sam', CAST(N'1999-07-02T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Eaten Alive', N'Joe', N'Ball', N'The Alligator Man', CAST(N'1977-05-13T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'10 Rillington Place', N'John Reginald', N'Christie', N'NULL', CAST(N'1971-01-29T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Conversations With a Killer: The Ted Bundy Tapes', N'Ted ', N'Bundy', N'NULL', CAST(N'2019-01-24T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Scream', N'Danny', N'Rolling', N'Gainesville Ripper', CAST(N'1996-12-20T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Gacy', N'John Wayne', N'Gacy', N'NULL', CAST(N'2003-05-13T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'From Hell', N'NULL', N'NULL', N'Jack The Ripper', CAST(N'2001-10-19T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Red Dragon', N'Dennis', N'Rader', N'BTK Killer', CAST(N'2002-10-04T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Kalifornia', N'Charles', N'Starkweather', N'NULL', CAST(N'1993-09-03T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Kalifornia', N'Caril Ann', N'Fugate', N'NULL', CAST(N'1993-09-03T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Honeymoon Killers', N'Raymond', N'Fernandez', N'NULL', CAST(N'1970-02-04T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Honeymoon Killers', N'Martha', N'Beck', N'NULL', CAST(N'1970-02-04T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Who Killed Atlanta''s Children?', N'Wayne Bertram', N'Williams', N'NULL', CAST(N'2000-07-16T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Dating Game Killer ', N'Rodney', N'Alcala', N'NULL', CAST(N'2017-12-03T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Town that Dreaded Sundown', N'NULL', N'NULL', N'The Town that Dreaded Sundown', CAST(N'1976-12-24T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Rampage', N'Richard', N'Chase', N'Vampire of Sacramento', CAST(N'1992-10-30T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Badlands', N'Charles', N'Starkweather', N'NULL', CAST(N'1974-01-05T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Badlands', N'Caril Ann', N'Fugate', N'NULL', CAST(N'1974-01-05T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Natural Born Killers', N'Charles', N'Starkweather', N'NULL', CAST(N'1994-08-26T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Natural Born Killers', N'Caril Ann', N'Fugate', N'NULL', CAST(N'1994-08-26T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Hunt For The BTK Killer', N'Dennis', N'Rader', N'BTK Killer', CAST(N'2005-10-09T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Night Stalker', N'Richard', N'Ramirez', N'The Nightstalker', CAST(N'2016-06-12T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Chicago Massacre: Richard Speck', N'Richard', N'Speck', N'NULL', CAST(N'2007-06-05T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Frozen Ground', N'Robert', N'Hansen', N'NULL', CAST(N'2013-02-01T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Strangers', N'NULL', N'NULL', N'The Manson Family', CAST(N'2008-05-30T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Eaten Alive', N'Joe', N'Ball', N'The Alligator Man', CAST(N'1977-05-13T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Ed Gein', N'Ed ', N'Gein', N'NULL', CAST(N'2001-07-20T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Speck', N'Richard', N'Speck', N'NULL', CAST(N'2002-10-01T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'My Friend Dahmer', N'Jeffrey', N'Dahmer', N'NULL', CAST(N'2018-03-02T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Out of the Darkness', N'David', N'Berkowitz', N'NULL', CAST(N'1985-10-12T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Gray Man', N'Albert', N'Fish', N'NULL', CAST(N'2007-08-31T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Green River Killer', N'Gary', N'Ridgeway', N'Green River Killer', CAST(N'2006-01-03T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'The Iceman', N'Richard', N'Kuklinski', N'The Iceman', CAST(N'2013-05-02T00:00:00.0000000' AS DateTime2))
+INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased]) VALUES (N'Killer: A Journal of Murder', N'Carl', N'Panzram ', N'NULL', CAST(N'1996-09-06T00:00:00.0000000' AS DateTime2))
+
+--Creating additional column on movies table
+ALTER TABLE [dbo].[Movies]
+ADD [SubjectName] as [SubjectLName] + ', ' + [SubjectFName]
+
 
 --Soundtrack Table--
 CREATE TABLE [dbo].[Soundtracks](
@@ -485,7 +493,6 @@ CREATE TABLE [dbo].[Soundtracks](
 	[Song] [varchar](100) NULL,
 	[Artist] [varchar](75) NULL
 ) ON [PRIMARY]
-
 
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (1, 1, N'Extremely Wicked, Shockingly Evil and Vile', N'Do You Believe In Magic?', N'THE LOVIN'' SPOONFUL')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (1, 2, N'Extremely Wicked, Shockingly Evil and Vile', N'Crimson and Clover', N'TOMMY JAMES')
@@ -866,6 +873,12 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (44, 377, N'Killer: A Journal of Murder', N'WE TRIED TO REACH FOR THE MOON ', N'Bill Elliott & His Orchestra ')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (44, 378, N'Killer: A Journal of Murder', N'MY BABY SAID SHE''S MARRY ME ', N'Bill Elliott & His Orchestra ')
 
+BEGIN TRANSACTION
+ALTER TABLE [dbo].[Movies]
+ADD [SubjectName] as [SubjectLName] + ', ' + [SubjectFName]
+COMMIT;
+
+
 
 --QUERIES
 
@@ -875,31 +888,37 @@ FROM [dbo].[Soundtracks]
 WHERE [Artist] = 'Q. Lazzarus'
 
 --Write a  SELECT query that uses an OR and an AND operator
-SELECT
-FROM
-WHERE
+SELECT [
+FROM [dbo].[Sountracks]
+WHERE BLANK = BLANK
+AND BKANK = BLANK OR BLANK
 
---Write a  SELECT query that filters NULL rows using IS NOT NULL
+--Write a  SELECT query that filters NULL rows using IS NOT NULL--WHAT IS WRONG WITH YOU
 SELECT [Movie], [Song], [Artist]
 FROM [dbo].[Soundtracks]
 WHERE [Artist] IS NOT NULL
 
 --Write a  SELECT query that utilizes a JOIN
-SELECT m.[MovieID]
+SELECT m.[SubjectFName], m.[SubjectLName], m.[Title], st.[Artist], st.[Song]
 FROM [dbo].[Movies] m 
 JOIN [dbo].[Soundtracks] st
+ON st.[Movie] = m.[Title]
+ORDER BY m.[Title], m.[SubjectLName]
 
 --Write a  SELECT query that utilizes a JOIN with 3 or more tables
-SELECT m.[Title]
-FROM [dbo].[Soundtracks] st
-JOIN [dbo].[Movies] m, [dbo].[SerialKillers] sk
-ON 
+SELECT *
+FROM [dbo].[SerialKillers] sk
+JOIN [dbo].[Movies] m
+ON  sk.[Name] = m.[SubjectName]
+JOIN [dbo].[Soundtracks] st
+ON st.[Movie] = m.[Title]
 
 
 --Write a  SELECT query that utilizes a LEFT JOIN
-SELECT
-FROM
-LEFT JOIN 
+SELECT [SubjectLName] + ', ' + [SubjectFName] as m.[SubjectName], 
+FROM [dbo].[Movies] m
+LEFT JOIN [dbo].[SerialKillers] sk
+ON m.[SubjectName] = sk.[Name]
 
 --Write a  SELECT query that utilizes a variable in the WHERE clause
 DECLARE @Dead int = 40
@@ -919,8 +938,10 @@ FROM [dbo].[Soundtracks]
 WHERE [SongID] % 2 = 0
 GROUP BY [Movie]
 
---Write a SELECT query that utilizes a CALCULATED FIELD -- possible victims - proven victims?
-
+--Write a SELECT query that utilizes a CALCULATED FIELD
+SELECT SUM([PossibleVictims]) - SUM([ProvenVictims]) as [PossibleUnaccountedVictims], [Name]
+FROM [dbo].[SerialKillers]
+GROUP BY [Name]
 
 --Write a SELECT query that utilizes a SUBQUERY
 SELECT [Name], [ProvenVictims], [Notes]
