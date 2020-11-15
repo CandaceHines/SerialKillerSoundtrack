@@ -1,52 +1,52 @@
-Title,SubjectFName,SubjectLName,Alias,YearReleased
-"Extremely Wicked, Shockingly Evil and Vile",Ted ,Bundy,NULL,2019-05-03 00:00:00
-Psycho,Ed ,Gein,Butcher of Plainfield,1998-12-04 00:00:00
-Dahmer,Jeffrey,Dahmer,NULL,2003-03-13 00:00:00
-Monster,Aileen,Wuornos,NULL,2003-01-30 00:00:00
-Halloween,Edmund,Kemper,NULL,1978-10-27 00:00:00
-Henry: Portrait of A Serial Killer,Henry Lee,Lucas,NULL,1990-09-07 00:00:00
-To Catch a Killer,John Wayne,Gacy,NULL,1992-05-15 00:00:00
-American Psycho,Ted ,Bundy,NULL,2000-04-14 00:00:00
-Zodiac,NULL,NULL,NULL,2007-03-02 00:00:00
-The Silence of the Lambs,Gary Michael,Heidnik,NULL,1991-02-14 00:00:00
-The Silence of the Lambs,Ed ,Gein,NULL,1991-02-14 00:00:00
-The Silence of the Lambs,Edmund,Kemper,NULL,1991-02-14 00:00:00
-The Silence of the Lambs,Ted ,Bundy,NULL,1991-02-14 00:00:00
-The Texas Chainsaw Massacre,Ed ,Gein,Butcher of Plainfield,2003-10-17 00:00:00
-The Boston Strangler ,Albert,DeSalvo,NULL,1968-10-16 00:00:00
-The Deliberate Stranger,Ted ,Bundy,NULL,1968-05-04 00:00:00
-Wolf Creek ,Ivan,Milat,NULL,2005-12-25 00:00:00
-Summer of Sam,David,Berkowitz,Son of Sam,1999-07-02 00:00:00
-Eaten Alive,Joe,Ball,The Alligator Man,1977-05-13 00:00:00
-10 Rillington Place,John Reginald,Christie,NULL,1971-01-29 00:00:00
-Conversations With a Killer: The Ted Bundy Tapes,Ted ,Bundy,NULL,2019-01-24 00:00:00
-Scream,Danny,Rolling,Gainesville Ripper,1996-12-20 00:00:00
-Gacy,John Wayne,Gacy,NULL,2003-05-13 00:00:00
-From Hell,NULL,NULL,Jack The Ripper,2001-10-19 00:00:00
-Red Dragon,Dennis,Rader,BTK Killer,2002-10-04 00:00:00
-Kalifornia,Charles,Starkweather,NULL,1993-09-03 00:00:00
-Kalifornia,Caril Ann,Fugate,NULL,1993-09-03 00:00:00
-The Honeymoon Killers,Raymond,Fernandez,NULL,1970-02-04 00:00:00
-The Honeymoon Killers,Martha,Beck,NULL,1970-02-04 00:00:00
-Who Killed Atlanta's Children?,Wayne Bertram,Williams,NULL,2000-07-16 00:00:00
-The Dating Game Killer ,Rodney,Alcala,NULL,2017-12-03 00:00:00
-The Town that Dreaded Sundown,NULL,NULL,The Town that Dreaded Sundown,1976-12-24 00:00:00
-Rampage,Richard,Chase,Vampire of Sacramento,1992-10-30 00:00:00
-Badlands,Charles,Starkweather,NULL,1974-01-05 00:00:00
-Badlands,Caril Ann,Fugate,NULL,1974-01-05 00:00:00
-Natural Born Killers,Charles,Starkweather,NULL,1994-08-26 00:00:00
-Natural Born Killers,Caril Ann,Fugate,NULL,1994-08-26 00:00:00
-The Hunt For The BTK Killer,Dennis,Rader,BTK Killer,2005-10-09 00:00:00
-The Night Stalker,Richard,Ramirez,The Nightstalker,2016-06-12 00:00:00
-Chicago Massacre: Richard Speck,Richard,Speck,NULL,2007-06-05 00:00:00
-The Frozen Ground,Robert,Hansen,NULL,2013-02-01 00:00:00
-The Strangers,NULL,NULL,The Manson Family,2008-05-30 00:00:00
-Eaten Alive,Joe,Ball,The Alligator Man,1977-05-13 00:00:00
-Ed Gein,Ed ,Gein,NULL,2001-07-20 00:00:00
-Speck,Richard,Speck,NULL,2002-10-01 00:00:00
-My Friend Dahmer,Jeffrey,Dahmer,NULL,2018-03-02 00:00:00
-Out of the Darkness,David,Berkowitz,NULL,1985-10-12 00:00:00
-The Gray Man,Albert,Fish,NULL,2007-08-31 00:00:00
-Green River Killer,Gary,Ridgeway,Green River Killer,2006-01-03 00:00:00
-The Iceman,Richard,Kuklinski,The Iceman,2013-05-02 00:00:00
-Killer: A Journal of Murder,Carl,Panzram ,NULL,1996-09-06 00:00:00
+Title,SubjectFName,SubjectLName,Alias,YearReleased,SubjectName
+"Extremely Wicked, Shockingly Evil and Vile",Ted ,Bundy,NULL,2019-05-03 00:00:00.0000000,"Bundy, Ted "
+Psycho,Ed ,Gein,Butcher of Plainfield,1998-12-04 00:00:00.0000000,"Gein, Ed "
+Dahmer,Jeffrey,Dahmer,NULL,2003-03-13 00:00:00.0000000,"Dahmer, Jeffrey"
+Monster,Aileen,Wuornos,NULL,2003-01-30 00:00:00.0000000,"Wuornos, Aileen"
+Halloween,Edmund,Kemper,NULL,1978-10-27 00:00:00.0000000,"Kemper, Edmund"
+Henry: Portrait of A Serial Killer,Henry Lee,Lucas,NULL,1990-09-07 00:00:00.0000000,"Lucas, Henry Lee"
+To Catch a Killer,John Wayne,Gacy,NULL,1992-05-15 00:00:00.0000000,"Gacy, John Wayne"
+American Psycho,Ted ,Bundy,NULL,2000-04-14 00:00:00.0000000,"Bundy, Ted "
+Zodiac,NULL,NULL,NULL,2007-03-02 00:00:00.0000000,"NULL, NULL"
+The Silence of the Lambs,Gary Michael,Heidnik,NULL,1991-02-14 00:00:00.0000000,"Heidnik, Gary Michael"
+The Silence of the Lambs,Ed ,Gein,NULL,1991-02-14 00:00:00.0000000,"Gein, Ed "
+The Silence of the Lambs,Edmund,Kemper,NULL,1991-02-14 00:00:00.0000000,"Kemper, Edmund"
+The Silence of the Lambs,Ted ,Bundy,NULL,1991-02-14 00:00:00.0000000,"Bundy, Ted "
+The Texas Chainsaw Massacre,Ed ,Gein,Butcher of Plainfield,2003-10-17 00:00:00.0000000,"Gein, Ed "
+The Boston Strangler ,Albert,DeSalvo,NULL,1968-10-16 00:00:00.0000000,"DeSalvo, Albert"
+The Deliberate Stranger,Ted ,Bundy,NULL,1968-05-04 00:00:00.0000000,"Bundy, Ted "
+Wolf Creek ,Ivan,Milat,NULL,2005-12-25 00:00:00.0000000,"Milat, Ivan"
+Summer of Sam,David,Berkowitz,Son of Sam,1999-07-02 00:00:00.0000000,"Berkowitz, David"
+Eaten Alive,Joe,Ball,The Alligator Man,1977-05-13 00:00:00.0000000,"Ball, Joe"
+10 Rillington Place,John Reginald,Christie,NULL,1971-01-29 00:00:00.0000000,"Christie, John Reginald"
+Conversations With a Killer: The Ted Bundy Tapes,Ted ,Bundy,NULL,2019-01-24 00:00:00.0000000,"Bundy, Ted "
+Scream,Danny,Rolling,Gainesville Ripper,1996-12-20 00:00:00.0000000,"Rolling, Danny"
+Gacy,John Wayne,Gacy,NULL,2003-05-13 00:00:00.0000000,"Gacy, John Wayne"
+From Hell,NULL,NULL,Jack The Ripper,2001-10-19 00:00:00.0000000,"NULL, NULL"
+Red Dragon,Dennis,Rader,BTK Killer,2002-10-04 00:00:00.0000000,"Rader, Dennis"
+Kalifornia,Charles,Starkweather,NULL,1993-09-03 00:00:00.0000000,"Starkweather, Charles"
+Kalifornia,Caril Ann,Fugate,NULL,1993-09-03 00:00:00.0000000,"Fugate, Caril Ann"
+The Honeymoon Killers,Raymond,Fernandez,NULL,1970-02-04 00:00:00.0000000,"Fernandez, Raymond"
+The Honeymoon Killers,Martha,Beck,NULL,1970-02-04 00:00:00.0000000,"Beck, Martha"
+Who Killed Atlanta's Children?,Wayne Bertram,Williams,NULL,2000-07-16 00:00:00.0000000,"Williams, Wayne Bertram"
+The Dating Game Killer ,Rodney,Alcala,NULL,2017-12-03 00:00:00.0000000,"Alcala, Rodney"
+The Town that Dreaded Sundown,NULL,NULL,The Town that Dreaded Sundown,1976-12-24 00:00:00.0000000,"NULL, NULL"
+Rampage,Richard,Chase,Vampire of Sacramento,1992-10-30 00:00:00.0000000,"Chase, Richard"
+Badlands,Charles,Starkweather,NULL,1974-01-05 00:00:00.0000000,"Starkweather, Charles"
+Badlands,Caril Ann,Fugate,NULL,1974-01-05 00:00:00.0000000,"Fugate, Caril Ann"
+Natural Born Killers,Charles,Starkweather,NULL,1994-08-26 00:00:00.0000000,"Starkweather, Charles"
+Natural Born Killers,Caril Ann,Fugate,NULL,1994-08-26 00:00:00.0000000,"Fugate, Caril Ann"
+The Hunt For The BTK Killer,Dennis,Rader,BTK Killer,2005-10-09 00:00:00.0000000,"Rader, Dennis"
+The Night Stalker,Richard,Ramirez,The Nightstalker,2016-06-12 00:00:00.0000000,"Ramirez, Richard"
+Chicago Massacre: Richard Speck,Richard,Speck,NULL,2007-06-05 00:00:00.0000000,"Speck, Richard"
+The Frozen Ground,Robert,Hansen,NULL,2013-02-01 00:00:00.0000000,"Hansen, Robert"
+The Strangers,NULL,NULL,The Manson Family,2008-05-30 00:00:00.0000000,"NULL, NULL"
+Eaten Alive,Joe,Ball,The Alligator Man,1977-05-13 00:00:00.0000000,"Ball, Joe"
+Ed Gein,Ed ,Gein,NULL,2001-07-20 00:00:00.0000000,"Gein, Ed "
+Speck,Richard,Speck,NULL,2002-10-01 00:00:00.0000000,"Speck, Richard"
+My Friend Dahmer,Jeffrey,Dahmer,NULL,2018-03-02 00:00:00.0000000,"Dahmer, Jeffrey"
+Out of the Darkness,David,Berkowitz,NULL,1985-10-12 00:00:00.0000000,"Berkowitz, David"
+The Gray Man,Albert,Fish,NULL,2007-08-31 00:00:00.0000000,"Fish, Albert"
+Green River Killer,Gary,Ridgeway,Green River Killer,2006-01-03 00:00:00.0000000,"Ridgeway, Gary"
+The Iceman,Richard,Kuklinski,The Iceman,2013-05-02 00:00:00.0000000,"Kuklinski, Richard"
+Killer: A Journal of Murder,Carl,Panzram ,NULL,1996-09-06 00:00:00.0000000,"Panzram , Carl"
