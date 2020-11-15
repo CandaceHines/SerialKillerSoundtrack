@@ -871,7 +871,7 @@ INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALU
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (44, 376, N'Killer: A Journal of Murder', N'WILDWOOD', N'Bill Elliott & His Orchestra')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (44, 377, N'Killer: A Journal of Murder', N'WE TRIED TO REACH FOR THE MOON', N'Bill Elliott & His Orchestra')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (44, 378, N'Killer: A Journal of Murder', N'MY BABY SAID SHE''S MARRY ME', N'Bill Elliott & His Orchestra')
-
+GO
 
 --QUERIES
 --Write a SELECT query that uses a WHERE clause
@@ -889,7 +889,7 @@ GROUP BY m.[Title]
 HAVING COUNT(st.[Song]) BETWEEN 1 and 20
 
 --Write a  SELECT query that filters NULL rows using IS NOT NULL
-SELECT [Movie], [Song], [Artist]
+SELECT [SongID], [Movie], [Song], [Artist]
 FROM [dbo].[Soundtracks]
 WHERE [Artist] IS NOT NULL
 
@@ -901,15 +901,19 @@ ON st.[Movie] = m.[Title]
 ORDER BY m.[Title], m.[SubjectLName]
 
 --Write a  SELECT query that utilizes a JOIN with 3 or more tables
-SELECT DISTINCT m.[SubjectFName], m.[SubjectLName], st.[Movie], sk.[Notes]
+SELECT DISTINCT m.[FullName], st.[Movie], sk.[Notes]
 FROM [dbo].[SerialKillers] sk
 JOIN [dbo].[Movies] m
 ON  sk.[Name] = m.[FullName]
 JOIN [dbo].[Soundtracks] st
 ON st.[Movie] = m.[Title]
+ORDER BY st.[Movie]
 
 --Write a  SELECT query that utilizes a LEFT JOIN
-
+SELECT sk.[Name], m.[Title], m.[YearReleased]
+FROM [dbo].[SerialKillers] sk
+LEFT JOIN [dbo].[Movies] m
+ON m.[FullName] = sk.[Name]
 
 --Write a  SELECT query that utilizes a variable in the WHERE clause
 DECLARE @Dead int = 40
@@ -969,9 +973,14 @@ HAVING COUNT(sk.[ProvenVictims]) BETWEEN 1 and 20
 
 
 --Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
+UPDATE
 
 
 --Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
+DELETE
+FROM
 
 
 --Write a DML statement that DELETEs rows from a table that another table references. This script will have to also DELETE any records that reference these rows. Both of the DELETE statements need to be wrapped in a single TRANSACTION.
+DELETE
+FROM
