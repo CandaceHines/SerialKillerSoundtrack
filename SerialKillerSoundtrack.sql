@@ -12,7 +12,8 @@ CREATE TABLE [dbo].[SerialKillers](
 	[PossibleVictims] [int] ,
 	[Status] [varchar](150) ,
 	[Notes] [varchar](500) 
-) ON [Primary]
+) 
+
 
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Ables, Tony', N'1970-1990', 4, N'4', N'Sentenced to death; commuted to life imprisonment', N'Murdered robbery victim in 1970 and at least three women until 1990 in St Petersburg Florida')
 INSERT [dbo].[SerialKillers] ([Name], [YearsActive], [ProvenVictims], [PossibleVictims], [Status], [Notes]) VALUES (N'Ackroyd, John Arthur', N'1976-1992', 1, N'3', N'Died in prison', N'Suspected in multiple murders along Orens Highway 20')
@@ -428,8 +429,7 @@ CREATE TABLE [dbo].[Movies](
 	[Alias] [varchar](50) NULL,
 	[FullName] [varchar](75) NOT NULL,
 	[YearReleased] [datetime2](7) NOT NULL
-
-) ON [Primary]
+) 
 
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased], [FullName]) VALUES (N'Extremely Wicked, Shockingly Evil and Vile', N'Ted', N'Bundy', N'NULL', CAST(N'2019-05-03T00:00:00.0000000' AS DateTime2), N'Bundy, Ted')
 INSERT [dbo].[Movies] ([Title], [SubjectFName], [SubjectLName], [Alias], [YearReleased], [FullName]) VALUES (N'Psycho', N'Ed', N'Gein', N'Butcher of Plainfield', CAST(N'1998-12-04T00:00:00.0000000' AS DateTime2), N'Gein, Ed')
@@ -491,7 +491,7 @@ CREATE TABLE [dbo].[Soundtracks](
 	[Movie] [varchar](100) NOT NULL,
 	[Song] [varchar](100) NULL,
 	[Artist] [varchar](75) NULL
-) ON [Primary]
+) 
 
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (1, 1, N'Extremely Wicked, Shockingly Evil and Vile', N'Do You Believe In Magic?', N'THE LOVINULL SPOONFUL')
 INSERT [dbo].[Soundtracks] ([MovieID], [SongID], [Movie], [Song], [Artist]) VALUES (1, 2, N'Extremely Wicked, Shockingly Evil and Vile', N'Crimson and Clover', N'TOMMY JAMES')
@@ -934,8 +934,9 @@ FROM [dbo].[Soundtracks]
 GROUP BY [Movie]
 
 --Write a SELECT query that utilizes a CALCULATED FIELD
-SELECT SUM([ProvenVictims]) as [TotalKnownVictims]
+SELECT [PossibleVictims] - [ProvenVictims] as [PossibleUnaccountedVictims], [Name]
 FROM [dbo].[SerialKillers]
+
 
 --Write a SELECT query that utilizes a SUBQUERY
 SELECT [Name], [ProvenVictims], [Notes]
