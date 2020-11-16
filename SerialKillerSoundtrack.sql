@@ -875,9 +875,9 @@ GO
 
 --QUERIES
 --Write a SELECT query that uses a WHERE clause
-SELECT [Movie], [Song]
-FROM [dbo].[Soundtracks]
-WHERE [Artist] ='Q. Lazzarus'
+SELECT [Name], [ProvenVictims], [Status], [Notes]
+FROM [dbo].[SerialKillers]
+WHERE [Status] LIKE '%died%' or [Status] LIKE '%dead%'
 
 --Write a  SELECT query that uses an OR and an AND operator
 SELECT m.[Title], COUNT(*) as [TrackCount]
@@ -910,10 +910,11 @@ ON st.[Movie] = m.[Title]
 ORDER BY st.[Movie]
 
 --Write a  SELECT query that utilizes a LEFT JOIN
-SELECT sk.[Name], m.[Title], m.[YearReleased]
+SELECT m.[FullName], m.[Title], m.[YearReleased], sk.[Status], sk.[Notes]
 FROM [dbo].[SerialKillers] sk
 LEFT JOIN [dbo].[Movies] m
 ON m.[FullName] = sk.[Name]
+WHERE m.[Title] is not NULL
 
 --Write a  SELECT query that utilizes a variable in the WHERE clause
 DECLARE @Dead int = 40
@@ -948,6 +949,7 @@ SELECT COUNT(st.[Song]), m.[FullName]
 FROM [dbo].[Soundtracks] st
 JOIN [dbo].[Movies] m
 ON m.[Title] = st.[Movie]
+WHERE m.[FullName] NOT LIKE '%NULL%'
 GROUP BY m.[FullName]
 HAVING COUNT(st.[Song]) > 1
 
@@ -962,20 +964,30 @@ WHERE m.[SubjectLName] = 'Bundy' OR m.[SubjectFName] LIKE '%Ed%'
 GROUP BY m.[Title]
 HAVING COUNT(sk.[ProvenVictims]) BETWEEN 1 and 20
 
---Design a NONCLUSTERED INDEX with ONE KEY COLUMN that improves the performance of one of the above queries
+--NONCLUSTERED INDEXES 
+--Design a NONCLUSTERED INDEX with ONE KEY COLUMN that improves the performance of one of the above queries --Query at 896-901
+CREATE NONCLUSTERED INDEX IX_Soundtracks_Title ON [dbo].[Soundtracks]
+(	[Movie] ASC
+)
 
+--Design a NONCLUSTERED INDEX with TWO KEY COLUMNS that improves the performance of one of the above queries-- Query at 912-917
+CREATE NONCLUSTERED INDEX IX_Movies_Title_FullName ON [dbo].[Movies]
+(	[Title] ASC,
+	[FullName] ASC
+)
 
---Design a NONCLUSTERED INDEX with TWO KEY COLUMNS that improves the performance of one of the above queries
-
-
---Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries
-
+--Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries --Query at 877-880
+CREATE NONCLUSTERED INDEX IX_SerialKillers_Name_Notes ON [dbo].[SerialKillers]
+(	[Name] ASC, 
+	[Notes]
+	)
+INCLUDE ([Status], [ProvenVictims])
 
 --NEEDS WORK
+--DML STATEMENTS
 --Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
 --WHAT I WANT TO DO: SET ARTIST TO UNKNOWN WHERE ARTIST IS NULL
 DECLARE @Unknown varchar(50)
-
 
 
 --Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
@@ -983,7 +995,13 @@ DECLARE @Unknown varchar(50)
 DECLARE @NoName varchar(50)
 
 
-
 --Write a DML statement that DELETEs rows from a table that another table references. This script will have to also DELETE any records that reference these rows. Both of the DELETE statements need to be wrapped in a single TRANSACTION.
 --WHAT I WANT TO DO: Delete serial killers that do not have a movie associated with them
+BEGIN TRANSACTION
 
+
+
+
+
+
+COMMIT;
