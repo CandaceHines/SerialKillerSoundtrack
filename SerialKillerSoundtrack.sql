@@ -951,7 +951,6 @@ ON m.[Title] = st.[Movie]
 GROUP BY m.[FullName]
 HAVING COUNT(st.[Song]) > 1
 
-
 --Write a SELECT query that utilizes a JOIN with 3 or more tables, at 2 OPERATORS (AND, OR, =, IN, BETWEEN, ETC), a GROUP BY clause with an aggregate function, and a HAVING clause
 SELECT m.[Title], SUM([PossibleVictims]) - SUM([ProvenVictims]) as [PossibleUnaccountedVictims]
 FROM [dbo].[SerialKillers] sk
@@ -972,15 +971,19 @@ HAVING COUNT(sk.[ProvenVictims]) BETWEEN 1 and 20
 --Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries
 
 
+--NEEDS WORK
 --Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
-UPDATE
+--WHAT I WANT TO DO: SET ARTIST TO UNKNOWN WHERE ARTIST IS NULL
+DECLARE @Unknown varchar(50)
+
 
 
 --Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
-DELETE
-FROM
+--WHAT I WANT TO DO: delete rows from movies with NULL FName and LName
+DECLARE @NoName varchar(50)
+
 
 
 --Write a DML statement that DELETEs rows from a table that another table references. This script will have to also DELETE any records that reference these rows. Both of the DELETE statements need to be wrapped in a single TRANSACTION.
-DELETE
-FROM
+--WHAT I WANT TO DO: Delete serial killers that do not have a movie associated with them
+
