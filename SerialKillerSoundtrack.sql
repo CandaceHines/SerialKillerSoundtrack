@@ -680,8 +680,6 @@ INSERT [dbo].[KillerMovies] ([Movie], [Killer]) VALUES (N'Killer: A Journal of M
 GO
 
 
-
---NEED TO REWORK THESE AFTER CREATING THE NEW TABLE
 --QUERIES
 --Write a SELECT query that uses a WHERE clause
 SELECT [Name], [ProvenVictims], [PossibleVictims], [Status]
@@ -713,7 +711,6 @@ ON  sk.[Name] = km.[Killer]
 JOIN [dbo].[Movies] m
 ON km.[Movie] = m.[Title]
 
-
 --Write a  SELECT query that utilizes a LEFT JOIN
 SELECT sk.[Name], km.[Movie], sk.[Status] 
 FROM [dbo].[SerialKillers] sk
@@ -743,7 +740,6 @@ GROUP BY [Movie]
 --Write a SELECT query that utilizes a CALCULATED FIELD
 SELECT [PossibleVictims] - [ProvenVictims] as [PossibleUnaccountedVictims], [Name]
 FROM [dbo].[SerialKillers]
-
 
 --Write a SELECT query that utilizes a SUBQUERY
 SELECT [Name], [ProvenVictims]
@@ -777,36 +773,41 @@ ORDER BY km.[Killer] ASC
 --NONCLUSTERED INDEXES 
 --Design a NONCLUSTERED INDEX with ONE KEY COLUMN that improves the performance of one of the above queries
 CREATE NONCLUSTERED INDEX IX_KillerMovies_Movie ON [dbo].[KillerMovies]
-(	[Movie] ASC
-)
+(	[Movie] ASC	)
 
 --Design a NONCLUSTERED INDEX with TWO KEY COLUMNS that improves the performance of one of the above queries
 CREATE NONCLUSTERED INDEX IX_Soundtracks_Movie_Song ON [dbo].[Soundtracks]
 (	[Movie] ASC,
-	[Song] ASC
-)
+	[Song] ASC	)
 
 --Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries
 CREATE NONCLUSTERED INDEX IX_SerialKillers_Name_Status ON [dbo].[SerialKillers]
 (	[Name] ASC, 
-	[Status]
-	)
+	[Status]	)
 INCLUDE ([PossibleVictims], [ProvenVictims])
 
 --DML STATEMENTS
 --Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
 BEGIN
-DECLARE @Unknown varchar(50)
+DECLARE @Unknown varchar(10) = 'Unknown'
 
+UPDATE [dbo].[Soundtracks]
+SET [Song] = @Unknown
+WHERE [Song] = 'NONE'
+
+SELECT *
+FROM [dbo].[Soundtracks]
 END
 
 --Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
 BEGIN
-DECLARE @NoName varchar(10) = 'NONE'
+DECLARE @NoName varchar(10) = 'Unknown'
 
 DELETE FROM [dbo].[Soundtracks]
 WHERE [Song] = @NoName
 
+SELECT *
+FROM [dbo].[Soundtracks]
 END
 
 --Write a DML statement that DELETEs rows from a table that another table references. This script will have to also DELETE any records that reference these rows. Both of the DELETE statements need to be wrapped in a single TRANSACTION.
