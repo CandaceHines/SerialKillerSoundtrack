@@ -6,13 +6,12 @@ GO
 USE [SerialKillerSoundtrack]
 CREATE TABLE [dbo].[SerialKillers](
 	[Name] varchar(50) PRIMARY KEY ,
-	[YearsActive] varchar(15) ,
 	[ProvenVictims] int ,
 	[PossibleVictims] int ,
 	[Status] varchar(150)  
 ) 
 INSERT [dbo].[SerialKillers] ([Name], [ProvenVictims], [PossibleVictims], [Status]) VALUES (N'Ables, Tony', 4, 4, N'Sentenced to death')
-INSERT [dbo].[SerialKillers] ([Name], [ProvenVictims], [PossibleVictims], [Status]) VALUES (N'Ackroyd, John Arthur', 1, 3, N'Died in preson')
+INSERT [dbo].[SerialKillers] ([Name], [ProvenVictims], [PossibleVictims], [Status]) VALUES (N'Ackroyd, John Arthur', 1, 3, N'Died in prison')
 INSERT [dbo].[SerialKillers] ([Name], [ProvenVictims], [PossibleVictims], [Status]) VALUES (N'Adams, Edward J', 7, 7, N'Killed by police during shootout')
 INSERT [dbo].[SerialKillers] ([Name], [ProvenVictims], [PossibleVictims], [Status]) VALUES (N'Alcala, Rodney', 8, 130, N'Sentenced to death')
 INSERT [dbo].[SerialKillers] ([Name], [ProvenVictims], [PossibleVictims], [Status]) VALUES (N'Allen Howard', 3, 3, N'Incarcerated for 60 years')
@@ -232,7 +231,7 @@ INSERT [dbo].[Movies] ([Title], [YearReleased]) VALUES (N'Zodiac', CAST(N'2007-0
 GO
 
 --Soundtrack Table--
---One to many relationship
+--One to many relationship (One movie to many songs)
 USE [SerialKillerSoundtrack]
 CREATE TABLE [dbo].[Soundtracks](
 	[SongID] int PRIMARY KEY ,
@@ -620,8 +619,8 @@ INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (377, N'
 
 GO
 
---Killer and Movies Table--
---Many to many relationship
+--Killer Movies Table--
+--Many to many relationship--(Many movies have more than one killer associated. Many killers have more than one movie associated)
 USE [SerialKillerSoundtrack]
  CREATE TABLE KillerMovies (
 	[Movie] varchar(50) FOREIGN KEY REFERENCES Movies(Title),
@@ -685,18 +684,14 @@ GO
 --NEED TO REWORK THESE AFTER CREATING THE NEW TABLE
 --QUERIES
 --Write a SELECT query that uses a WHERE clause
-SELECT [Name], [ProvenVictims], [Status], [Notes]
+SELECT [Name], [ProvenVictims], [PossibleVictims], [Status]
 FROM [dbo].[SerialKillers]
 WHERE [Status] LIKE '%died%' or [Status] LIKE '%dead%'
 
 --Write a  SELECT query that uses an OR and an AND operator
-SELECT m.[Title], COUNT(*) as [TrackCount]
-FROM [dbo].[Movies] m
-JOIN [dbo].[Soundtracks] st
-ON st.[Movie] = m.[Title]
-WHERE m.[SubjectLName] = 'Bundy' OR m.[SubjectFName] LIKE '%Ed%'   
-GROUP BY m.[Title]
-HAVING COUNT(st.[Song]) BETWEEN 1 and 20
+SELECT *
+FROM [dbo].[SerialKillers]
+WHERE [Name] = 'Bundy' OR [Name] NOT LIKE '%Ed%' AND  [ProvenVictims] > 4
 
 --Write a  SELECT query that filters NULL rows using IS NOT NULL
 SELECT [SongID], [Movie], [Song], [Artist]
@@ -704,34 +699,36 @@ FROM [dbo].[Soundtracks]
 WHERE [Artist] IS NOT NULL
 
 --Write a  SELECT query that utilizes a JOIN
-SELECT m.[SubjectFName], m.[SubjectLName], m.[Title], st.[Artist], st.[Song]
+SELECT m.[Title], st.[Artist], st.[Song]
 FROM [dbo].[Movies] m 
 JOIN [dbo].[Soundtracks] st
 ON st.[Movie] = m.[Title]
-ORDER BY m.[Title], m.[SubjectLName]
+ORDER BY m.[Title]
 
 --Write a  SELECT query that utilizes a JOIN with 3 or more tables
-SELECT DISTINCT m.[FullName], st.[Movie], sk.[Notes]
+SELECT m.[Title], km.[Killer], sk.[Status]
 FROM [dbo].[SerialKillers] sk
+JOIN [dbo].[KillerMovies] km
+ON  sk.[Name] = km.[Killer]
 JOIN [dbo].[Movies] m
-ON  sk.[Name] = m.[FullName]
-JOIN [dbo].[Soundtracks] st
-ON st.[Movie] = m.[Title]
-ORDER BY st.[Movie]
+ON km.[Movie] = m.[Title]
+
 
 --Write a  SELECT query that utilizes a LEFT JOIN
-SELECT m.[FullName], m.[Title], m.[YearReleased], sk.[Status], sk.[Notes]
+SELECT sk.[Name], km.[Movie], sk.[Status] 
 FROM [dbo].[SerialKillers] sk
-LEFT JOIN [dbo].[Movies] m
-ON m.[FullName] = sk.[Name]
-WHERE m.[Title] is not NULL
+LEFT JOIN [dbo].[KillerMovies] km
+ON km.[Killer] = sk.[Name]
+WHERE sk.[Status] <> 'Unknown'
 
 --Write a  SELECT query that utilizes a variable in the WHERE clause
+BEGIN
 DECLARE @Dead int = 40
 
 SELECT [Name], [PossibleVictims], [Status]
 FROM [dbo].[SerialKillers]
 WHERE [PossibleVictims] < @Dead
+END
 
 --Write a  SELECT query that utilizes a ORDER BY clause
 SELECT [Movie], [Song], [Artist]
@@ -739,7 +736,7 @@ FROM [Soundtracks]
 ORDER BY [SongID] desc
 
 --Write a  SELECT query that utilizes a GROUP BY clause along with an aggregate function
-SELECT Count(Song), [Movie]
+SELECT Count(Song) as [SongCount], [Movie]
 FROM [dbo].[Soundtracks]
 GROUP BY [Movie]
 
@@ -749,50 +746,52 @@ FROM [dbo].[SerialKillers]
 
 
 --Write a SELECT query that utilizes a SUBQUERY
-SELECT [Name], [ProvenVictims], [Notes]
+SELECT [Name], [ProvenVictims]
 FROM [dbo].[SerialKillers]
 WHERE [ProvenVictims] = (
 			SELECT Max(ProvenVictims)
 			FROM [dbo].[SerialKillers])
 
 --Write a SELECT query that utilizes a JOIN, at least 2 OPERATORS (AND, OR, =, IN, BETWEEN, ETC) AND A GROUP BY clause with an aggregate function
-SELECT COUNT(st.[Song]), m.[FullName]
+SELECT COUNT(st.[Song]) as [TrackCount], km.[Killer]
 FROM [dbo].[Soundtracks] st
-JOIN [dbo].[Movies] m
-ON m.[Title] = st.[Movie]
-WHERE m.[FullName] NOT LIKE '%NULL%'
-GROUP BY m.[FullName]
+JOIN [dbo].[KillerMovies] km
+ON km.[Movie] = st.[Movie]
+WHERE st.[Artist] is not NULL AND km.[Killer] is not NULL
+GROUP BY km.[Killer]
 HAVING COUNT(st.[Song]) > 1
 
 --Write a SELECT query that utilizes a JOIN with 3 or more tables, at 2 OPERATORS (AND, OR, =, IN, BETWEEN, ETC), a GROUP BY clause with an aggregate function, and a HAVING clause
-SELECT st.[Movie], SUM([PossibleVictims]) - SUM([ProvenVictims]) as [PossibleUnaccountedVictims]
+SELECT MAX(sk.[PossibleVictims]) as [PossibleVictims], km.Killer
 FROM [dbo].[SerialKillers] sk
+JOIN [dbo].[KillerMovies] km
+ON  sk.[Name] = km.[Killer]
 JOIN [dbo].[Movies] m
-ON  sk.[Name] = m.[FullName]
-JOIN [dbo].[Soundtracks] st
-ON st.[Movie] = m.[Title]
-WHERE m.[SubjectLName] = 'Bundy' OR m.[SubjectFName] LIKE '%Ed%' 
-GROUP BY st.[Movie]
-HAVING COUNT(sk.[ProvenVictims]) BETWEEN 1 and 20
-
+ON km.[Movie] = m.[Title]
+WHERE m.[Title] LIKE '%10%' OR  m.[Title] LIKE '%The%'
+GROUP BY km.Killer
+HAVING MAX(sk.[PossibleVictims]) > 2
+ORDER BY km.[Killer] ASC
+ 
+ 
 --NONCLUSTERED INDEXES 
---Design a NONCLUSTERED INDEX with ONE KEY COLUMN that improves the performance of one of the above queries --Query at 896-901
-CREATE NONCLUSTERED INDEX IX_Soundtracks_Title ON [dbo].[Soundtracks]
+--Design a NONCLUSTERED INDEX with ONE KEY COLUMN that improves the performance of one of the above queries
+CREATE NONCLUSTERED INDEX IX_KillerMovies_Movie ON [dbo].[KillerMovies]
 (	[Movie] ASC
 )
 
---Design a NONCLUSTERED INDEX with TWO KEY COLUMNS that improves the performance of one of the above queries-- Query at 912-917
-CREATE NONCLUSTERED INDEX IX_Movies_Title_FullName ON [dbo].[Movies]
-(	[Title] ASC,
-	[FullName] ASC
+--Design a NONCLUSTERED INDEX with TWO KEY COLUMNS that improves the performance of one of the above queries
+CREATE NONCLUSTERED INDEX IX_Soundtracks_Movie_Song ON [dbo].[Soundtracks]
+(	[Movie] ASC,
+	[Song] ASC
 )
 
---Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries --Query at 877-880
-CREATE NONCLUSTERED INDEX IX_SerialKillers_Name_Notes ON [dbo].[SerialKillers]
+--Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries
+CREATE NONCLUSTERED INDEX IX_SerialKillers_Name_Status ON [dbo].[SerialKillers]
 (	[Name] ASC, 
-	[Notes]
+	[Status]
 	)
-INCLUDE ([Status], [ProvenVictims])
+INCLUDE ([PossibleVictims], [ProvenVictims])
 
 --DML STATEMENTS
 --Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
@@ -800,7 +799,6 @@ BEGIN
 DECLARE @Unknown varchar(50)
 
 END
-
 
 --Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
 BEGIN
@@ -810,13 +808,23 @@ DELETE FROM [dbo].[Soundtracks]
 WHERE [Song] = @NoName
 
 END
+
 --Write a DML statement that DELETEs rows from a table that another table references. This script will have to also DELETE any records that reference these rows. Both of the DELETE statements need to be wrapped in a single TRANSACTION.
---WHAT I WANT TO DO: Delete serial killers that do not have a movie associated with them
 BEGIN TRANSACTION
 
 
+DELETE FROM [dbo].[Soundtracks] 
+WHERE [Movie] = 'From Hell'
 
+DELETE FROM [dbo].[KillerMovies] 
+WHERE [Movie] = 'From Hell' 
 
+DELETE FROM [dbo].[Movies] 
+WHERE [Title] = 'From Hell' 
 
-
+ 
+SELECT km.[Movie], st.[SongID], st.[Song], st.[Artist], km.[Killer]
+FROM [dbo].[Soundtracks] st
+JOIN [dbo].[KillerMovies] km
+ON  st.[Movie] = km.[Movie]
 COMMIT;
