@@ -7,13 +7,13 @@ Multiple tables, scripted so everything is contained in a single file.
 
 Requirements: 
       
-    • Create a relational database schema with a minimum of 3 tables-- Done 
-    • At least 2 of the tables should contain 4 or more columns-- Done
-    • Two of the tables should have a many-to-many relationship-- Done
-    • Two of the tables should have a one-to-many relationship-- Done
-    • The following data types should be present somewhere in the table definitions: DATETIME, INT, VARCHAR-- Done
-    • Each table should be related to one or more of the other tables via a primary key/foreign key relationship-- Done
-    • Populate these tables with data by manually inserting data, or using some sort of import tool. INCLUDE YOUR INSERT SCRIPT-- Done
+    • Create a relational database schema with a minimum of 3 tables 
+    • At least 2 of the tables should contain 4 or more columns 
+    • Two of the tables should have a many-to-many relationship 
+    • Two of the tables should have a one-to-many relationship 
+    • The following data types should be present somewhere in the table definitions: DATETIME, INT, VARCHAR 
+    • Each table should be related to one or more of the other tables via a primary key/foreign key relationship 
+    • Populate these tables with data by manually inserting data, or using some sort of import tool. INCLUDE YOUR INSERT SCRIPT 
       
     • Using the above tables...
     • Write a SELECT query that uses a WHERE clause

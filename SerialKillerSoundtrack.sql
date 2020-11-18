@@ -299,7 +299,7 @@ INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (57, N'E
 INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (58, N'Extremely Wicked, Shockingly Evil and Vile', N'Thousand Watt Work-Out', N'JOHN MORAN')
 INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (59, N'Extremely Wicked, Shockingly Evil and Vile', N'We''ll Face This World Together', N'TOMMY SMITH BAND')
 INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (60, N'Extremely Wicked, Shockingly Evil and Vile', N'Symphony No. 9 in D minor, Op. 125, Choral: II. Molto vivace', N'ZAGREB PHILHARMONIC ORCHESTRA, RICHARD EDLINGER')
-INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (61, N'Extremely Wicked, Shockingly Evil and Vile', N'I tcha', N'JOE TEX')
+INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (61, N'Extremely Wicked, Shockingly Evil and Vile', N'I gotcha', N'JOE TEX')
 INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (62, N'Extremely Wicked, Shockingly Evil and Vile', N'Lucky Man (2012 Remastered Version)', N'EMERSON, LAKE & PALMER')
 INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (63, N'Extremely Wicked, Shockingly Evil and Vile', N'The Letter', N'THE BOX TOPS')
 INSERT [dbo].[Soundtracks] ([SongID], [Movie], [Song], [Artist]) VALUES (64, N'Extremely Wicked, Shockingly Evil and Vile', N'Looking For The Answer', N'THE ELDERS')
@@ -811,20 +811,21 @@ END
 
 --Write a DML statement that DELETEs rows from a table that another table references. This script will have to also DELETE any records that reference these rows. Both of the DELETE statements need to be wrapped in a single TRANSACTION.
 BEGIN TRANSACTION
-
+DECLARE @Hell varchar(15) = 'From Hell'
 
 DELETE FROM [dbo].[Soundtracks] 
-WHERE [Movie] = 'From Hell'
+WHERE [Movie] = @Hell
 
 DELETE FROM [dbo].[KillerMovies] 
-WHERE [Movie] = 'From Hell' 
+WHERE [Movie] = @Hell 
 
 DELETE FROM [dbo].[Movies] 
-WHERE [Title] = 'From Hell' 
+WHERE [Title] = @Hell 
 
  
 SELECT km.[Movie], st.[SongID], st.[Song], st.[Artist], km.[Killer]
 FROM [dbo].[Soundtracks] st
 JOIN [dbo].[KillerMovies] km
 ON  st.[Movie] = km.[Movie]
+ORDER BY  km.[Movie] ASC
 COMMIT;
