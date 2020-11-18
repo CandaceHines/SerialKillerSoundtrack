@@ -788,23 +788,22 @@ INCLUDE ([PossibleVictims], [ProvenVictims])
 
 --DML STATEMENTS
 --Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
-BEGIN
-DECLARE @Unknown varchar(10) = 'Unknown'
+DECLARE @NoName varchar(10) = 'None'
 
 UPDATE [dbo].[Soundtracks]
-SET [Song] = @Unknown
-WHERE [Song] = 'NONE'
+SET [Song] = 'Unknown'
+WHERE [Song] = @NoName
 
 SELECT *
 FROM [dbo].[Soundtracks]
-END
+
 
 --Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable
 BEGIN
-DECLARE @NoName varchar(10) = 'Unknown'
+DECLARE @Unknown varchar(10) = 'Unknown'
 
 DELETE FROM [dbo].[Soundtracks]
-WHERE [Song] = @NoName
+WHERE [Song] = @Unknown
 
 SELECT *
 FROM [dbo].[Soundtracks]
@@ -822,11 +821,11 @@ WHERE [Movie] = @Hell
 
 DELETE FROM [dbo].[Movies] 
 WHERE [Title] = @Hell 
-
+COMMIT;
  
 SELECT km.[Movie], st.[SongID], st.[Song], st.[Artist], km.[Killer]
 FROM [dbo].[Soundtracks] st
 JOIN [dbo].[KillerMovies] km
 ON  st.[Movie] = km.[Movie]
 ORDER BY  km.[Movie] ASC
-COMMIT;
+
