@@ -1,4 +1,4 @@
-﻿--Create Database
+--Create Database
 CREATE DATABASE [SerialKillerSoundtrack];
 GO
 
